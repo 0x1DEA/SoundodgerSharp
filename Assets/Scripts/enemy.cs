@@ -1,18 +1,17 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : MonoBehaviour
-{
-    // Bullet Prefabs
-    public GameObject linA;
-    public GameObject linB;
-    public GameObject bub;
-    public GameObject homing;
-    public GameObject hug;
-    public GameObject heart;
+public class enemy : MonoBehaviour {
 
     private GameObject target;
+    private float angle;
+    public float arenaRadius;
+    public float enemyRadius;
+    public Vector3 center;
+    public float i;
+    private float radius = 4.5f;
 
     void Start()
     {
@@ -22,11 +21,12 @@ public class enemy : MonoBehaviour
     void Update()
     {
         target = GameObject.Find("Enemies");
-        float newZ = transform.eulerAngles.z + target.transform.eulerAngles.z;
-        transform.rotation = Quaternion.Euler(0f, 0f, newZ);
+        //float newZ = transform.eulerAngles.z + target.transform.eulerAngles.z;
 
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Instantiate(linA, new Vector3(0f, 0f, 0f), new Quaternion(0f, 0f, 0f, 0f));
-        }
+        float ang = (i * Mathf.PI * 2f / game.numObjects) + target.transform.eulerAngles.z;
+        Vector3 newPos = new Vector3(Mathf.Cos(ang) * radius, Mathf.Sin(ang) * radius, 0);
+        transform.position = newPos;
+        //angle = transform.eulerAngles.z + target.transform.eulerAngles.z;
+        //transform.position = new Vector3(center.x + Mathf.Sin(angle) * (arenaRadius + enemyRadius), center.y + Mathf.Cos(angle) * (arenaRadius + enemyRadius), 0);
     }
 }

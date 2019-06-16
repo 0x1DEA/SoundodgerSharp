@@ -45,12 +45,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0351ece45c1a24c4cba7f3eb76c8a25f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  linA: {fileID: 7100975342046925808, guid: ce5a8f82cebe2784d9b918df9bff9c4c, type: 3}
-  linB: {fileID: 0}
-  bub: {fileID: 0}
-  homing: {fileID: 0}
-  hug: {fileID: 0}
-  heart: {fileID: 0}
+  arenaRadius: 3.5
+  enemyRadius: 1
+  center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1019610165342286637
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71,7 +68,7 @@ PrefabInstance:
     - target: {fileID: 3086428306191586507, guid: f51208a39532cab46b32366f1e7a64a1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3086428306191586507, guid: f51208a39532cab46b32366f1e7a64a1,
         type: 3}
@@ -157,7 +154,7 @@ PrefabInstance:
     - target: {fileID: 8456433918791484869, guid: bc15c43c6243ee443b0fd19c8d1ba98c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8456433918791484869, guid: bc15c43c6243ee443b0fd19c8d1ba98c,
         type: 3}

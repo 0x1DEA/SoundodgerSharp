@@ -11,7 +11,7 @@ public class player : MonoBehaviour
     private float playerY;
     private float playerX;
     private float angle;
-    private Vector3 center;
+    public Vector3 center;
 
     void Start()
     {
