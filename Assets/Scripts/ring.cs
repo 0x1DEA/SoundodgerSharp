@@ -15,7 +15,7 @@ public class ring : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        life += 0.02f;
+        life += 0.01f;
         transform.localScale += new Vector3(0.005f * life, 0.005f * life, 0);
         if (transform.localScale.x >= 3) {
             Destroy(gameObject);
