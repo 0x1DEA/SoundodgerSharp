@@ -1,0 +1,847 @@
+<Song>
+  <Info nick="bloom" enemies="8" color1="13224393" color2="7566195" color3="9671571" color4="2829099" color5="10461087" color6="13684944" color7="6250335" color8="6974058" color9="3815994" title="Bloom" artist="ambinate" difficulty="7" designer="Krazyman50" MP3Name="ambinate - So Far - 01 Bloom.mp3" audioPreview="27" subtitle=""/>
+  <Script time="0" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="1.017" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="1.862" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="2.706" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="3.551" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="4.395" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="5.24" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="6.084" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="6.929" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="7.773" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="8.618" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="9.462" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="10.307" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="11.151" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="11.996" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="12.841" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="13.685" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="14.53" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="15.374" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="16.219" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="17.063" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="17.908" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="18.752" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="19.597" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="20.441" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="21.286" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="22.131" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="22.975" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="23.82" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="24.664" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="25.509" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="26.353" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="26.67" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="26.67" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="27.295" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="27.416" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="55.613" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="68.669" enemies="0" warpType="timeWarp" val="1.5"/>
+  <Script time="69.496" enemies="0" warpType="timeWarp" val="2"/>
+  <Script time="69.945" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="70.376" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="70.95" enemies="0" warpType="timeWarp" val="2"/>
+  <Script time="71.43" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="71.92" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="72.207" enemies="0" warpType="timeWarp" val="1.5"/>
+  <Script time="72.386" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="123.539" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="123.963" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="150.707" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="150.749" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="191.741" enemies="0" warpType="timeWarp" val="1.5"/>
+  <Script time="191.916" enemies="0" warpType="timeWarp" val="0.5"/>
+  <Script time="192.966" enemies="0" warpType="timeWarp" val="1.5"/>
+  <Script time="194.561" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="195.573" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="196.031" enemies="0" warpType="timeWarp" val="1.5"/>
+  <Script time="197.337" enemies="0" warpType="timeWarp" val="1.5"/>
+  <Script time="198.218" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="198.806" enemies="0" warpType="timeWarp" val="0"/>
+  <Script time="198.945" enemies="0" warpType="timeWarp" val="1.5"/>
+  <Script time="199.306" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="276.584" enemies="0" warpType="timeWarp" val="1"/>
+  <Script time="0" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="0.964" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="1.803" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="2.642" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="3.48" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="4.319" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="5.158" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="5.996" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="6.835" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="7.716" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="8.554" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="9.393" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="10.232" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="11.07" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="11.909" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="12.748" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="13.586" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="14.467" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="15.306" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="16.144" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="16.983" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="17.822" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="18.66" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="19.499" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="20.338" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="21.218" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="22.057" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="22.896" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="23.734" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="24.573" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="25.412" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="26.25" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="27.131" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="27.349" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="27.349" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="28.051" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="28.9" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="29.75" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="30.599" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="31.448" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="32.298" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="33.147" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="33.996" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="34.846" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="35.695" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="36.544" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="37.394" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="38.243" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="39.092" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="39.942" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="40.791" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="41.64" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="42.49" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="43.339" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="44.188" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="45.038" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="45.887" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="46.736" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="47.586" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="48.435" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="49.284" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="50.134" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="50.983" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="51.832" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="52.682" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="53.531" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="54.888" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="54.888" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="56.496" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="56.615" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="57.421" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="58.393" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="58.44" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="59.246" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="60.057" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="60.093" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="61.379" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="61.839" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="61.839" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="63.247" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="63.497" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="63.515" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="64.651" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="65.155" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="65.244" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="66.563" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="66.919" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="67.008" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="68.61" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="71.881" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="71.902" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="72.466" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="73.029" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="73.593" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="74.156" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="74.72" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="75.284" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="75.847" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="76.411" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="76.974" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="77.538" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="78.101" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="78.665" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="79.229" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="79.792" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="80.356" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="80.919" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="81.483" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="82.047" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="82.61" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="83.174" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="83.737" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="84.301" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="84.864" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="85.428" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="85.992" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="86.555" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="87.119" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="87.682" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="88.246" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="88.81" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="89.373" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="89.937" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="90.5" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="91.064" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="91.627" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="92.191" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="92.755" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="93.318" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="93.882" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="94.445" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="95.009" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="95.573" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="96.136" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="96.7" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="97.263" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="97.827" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="98.39" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="98.954" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="99.518" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="100.081" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="100.645" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="101.208" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="101.772" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="102.336" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="102.899" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="103.463" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="104.026" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="104.59" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="105.154" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="105.717" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="106.281" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="106.844" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="107.408" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="107.971" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="108.535" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="109.099" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="109.662" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="110.226" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="110.789" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="111.353" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="111.917" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="112.48" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="113.044" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="113.607" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="114.171" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="114.734" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="115.298" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="115.862" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="116.425" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="116.989" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="117.552" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="118.116" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="118.68" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="119.243" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="119.807" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="120.37" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="120.934" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="121.497" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="122.061" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="122.625" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="123.408" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="124.111" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="124.813" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="125.516" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="126.784" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="127.511" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="128.182" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="128.909" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="130.488" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="131.215" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="131.886" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="132.613" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="133.829" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="134.556" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="135.227" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="135.954" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="136.748" enemies="0" warpType="spinRate" val="1"/>
+  <Script time="137.039" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="138.184" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="139.329" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="140.475" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="141.62" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="142.765" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="143.911" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="145.056" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="146.201" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="147.347" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="148.492" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="149.637" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="150.783" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="151.928" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="153.073" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="154.218" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="155.364" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="156.509" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="157.654" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="158.8" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="159.945" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="161.09" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="162.236" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="163.381" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="164.526" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="165.671" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="166.817" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="167.962" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="169.107" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="170.253" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="171.398" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="172.543" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="173.689" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="174.834" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="175.979" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="177.125" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="178.27" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="179.415" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="180.56" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="181.706" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="182.851" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="183.996" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="185.142" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="186.287" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="187.432" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="188.578" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="189.723" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="190.868" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="191.519" enemies="0" warpType="spinRate" val="2"/>
+  <Script time="191.51" enemies="0" warpType="spinRate" val="3"/>
+  <Script time="198.832" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="199.989" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="201.128" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="202.267" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="203.406" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="204.544" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="205.683" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="206.822" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="207.961" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="209.1" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="210.238" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="211.377" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="212.516" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="213.512" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="214.647" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="215.783" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="216.949" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="218.084" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="219.219" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="220.354" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="221.489" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="222.624" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="223.759" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="224.894" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="226.061" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="227.205" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="228.35" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="229.494" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="230.638" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="231.782" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="232.927" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="234.071" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="235.215" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="236.359" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="237.503" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="238.648" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="239.792" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="240.896" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="242.001" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="243.105" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="244.21" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="245.314" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="246.418" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="247.523" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="248.627" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="249.732" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="250.836" enemies="0" warpType="spinRate" val="6"/>
+  <Script time="251.941" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="253.045" enemies="0" warpType="spinRate" val="4"/>
+  <Script time="254.224" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="255.391" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="255.4" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="256.953" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="258.905" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="258.927" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="260.634" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="262.419" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="262.454" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="263.813" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="265.932" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="265.914" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="267.326" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="269.278" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="269.278" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="270.684" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="272.736" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="272.736" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="274.211" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="275.387" enemies="0" warpType="spinRate" val="5"/>
+  <Script time="276.584" enemies="0" warpType="spinRate" val="0"/>
+  <Script time="0.134" enemies="2,6" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="30" speed0="5" angle0="60" offset1="30" speed1="5" angle1="60" duration="26.613"/>
+  <Script time="14.766" enemies="1" shotType="burst" bulletType="nrm2" aim="mid" offset0="0" amount0="20" angle0="100" speed0="4" speed1="6.5"/>
+  <Script time="16.464" enemies="7" shotType="burst" bulletType="nrm2" aim="mid" offset0="0" amount0="20" angle0="100" speed0="4" speed1="6.5"/>
+  <Script time="18.466" enemies="5" shotType="burst" bulletType="nrm2" aim="mid" offset0="0" amount0="20" angle0="100" speed0="4" speed1="6.5"/>
+  <Script time="21.83" enemies="3" shotType="burst" bulletType="nrm2" aim="mid" offset0="0" amount0="20" angle0="100" speed0="4" speed1="6.5"/>
+  <Script time="23.519" enemies="1" shotType="burst" bulletType="nrm2" aim="mid" offset0="0" amount0="20" angle0="100" speed0="4" speed1="6.5"/>
+  <Script time="25.209" enemies="7" shotType="burst" bulletType="nrm2" aim="mid" offset0="0" amount0="20" angle0="100" speed0="4" speed1="6.5"/>
+  <Script time="27.318" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="20" amount0="6" speed0="7.5" angle0="65" offset1="20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="28.07" enemies="3" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="28.425" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="28.656" enemies="1" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="29.035" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="20" amount0="6" speed0="7.5" angle0="65" offset1="20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="29.913" enemies="7" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="30.27" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="30.505" enemies="5" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="30.754" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="20" amount0="6" speed0="7.5" angle0="65" offset1="20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="31.49" enemies="3" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="31.844" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="32.076" enemies="1" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="32.471" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="20" amount0="6" speed0="7.5" angle0="65" offset1="20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="33.247" enemies="7" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="33.603" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="33.836" enemies="5" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="34.184" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="20" amount0="6" speed0="7.5" angle0="65" offset1="20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="34.842" enemies="3" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="35.192" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="35.428" enemies="1" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="35.901" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="20" amount0="6" speed0="7.5" angle0="65" offset1="20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="36.681" enemies="7" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="37.034" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="37.275" enemies="5" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="37.621" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="20" amount0="6" speed0="7.5" angle0="65" offset1="20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="38.258" enemies="3" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="38.615" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="38.849" enemies="1" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="39.336" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="20" amount0="6" speed0="7.5" angle0="65" offset1="20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="40.017" enemies="7" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="40.374" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="40.604" enemies="5" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="41.055" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="-20" amount0="6" speed0="7.5" angle0="65" offset1="-20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="41.692" enemies="3" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="42.046" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="42.284" enemies="1" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="42.772" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="-20" amount0="6" speed0="7.5" angle0="65" offset1="-20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="43.535" enemies="7" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="43.892" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="44.124" enemies="5" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="44.493" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="-20" amount0="6" speed0="7.5" angle0="65" offset1="-20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="45.112" enemies="3" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="45.466" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="45.7" enemies="1" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="46.211" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="-20" amount0="6" speed0="7.5" angle0="65" offset1="-20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="46.869" enemies="7" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="47.225" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="47.455" enemies="5" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="47.922" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="-20" amount0="6" speed0="7.5" angle0="65" offset1="-20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="48.46" enemies="3" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="48.814" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="49.05" enemies="1" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="49.641" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="-20" amount0="6" speed0="7.5" angle0="65" offset1="-20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="50.305" enemies="7" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="50.659" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="50.897" enemies="5" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="51.36" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="-20" amount0="6" speed0="7.5" angle0="65" offset1="-20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="51.88" enemies="3" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="52.237" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="52.468" enemies="1" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="53.079" enemies="1,5" shotType="wave" bulletType="nrm" rows="5" aim="mid" offset0="-20" amount0="6" speed0="7.5" angle0="65" offset1="-20" amount1="6" speed1="4" angle1="65"/>
+  <Script time="53.635" enemies="7" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="53.996" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="54.245" enemies="5" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3" angle0="0"/>
+  <Script time="54.869" enemies="2,6" shotType="normal" bulletType="nrm" aim="mid" offset0="0" amount0="10" speed0="4" angle0="100"/>
+  <Script time="55.391" enemies="1" shotType="normal" bulletType="hug" aim="pl" offset0="0" amount0="1" speed0="3" angle0="0"/>
+  <Script time="55.392" enemies="1" shotType="wave" bulletType="bubble" rows="2" aim="pl" offset0="0" amount0="1" speed0="4" angle0="0" offset1="0" amount1="1" speed1="2" angle1="0"/>
+  <Script time="55.963" enemies="5" shotType="normal" bulletType="hug" aim="pl" offset0="0" amount0="1" speed0="3" angle0="0"/>
+  <Script time="55.968" enemies="5" shotType="wave" bulletType="bubble" rows="2" aim="pl" offset0="0" amount0="1" speed0="4" angle0="0" offset1="0" amount1="1" speed1="2" angle1="0"/>
+  <Script time="56.582" enemies="2,6" shotType="normal" bulletType="nrm" aim="mid" offset0="0" amount0="10" speed0="4" angle0="100"/>
+  <Script time="58.296" enemies="2,6" shotType="normal" bulletType="nrm" aim="mid" offset0="0" amount0="10" speed0="4" angle0="100"/>
+  <Script time="58.965" enemies="3" shotType="normal" bulletType="hug" aim="pl" offset0="0" amount0="1" speed0="3" angle0="0"/>
+  <Script time="58.967" enemies="3" shotType="wave" bulletType="bubble" rows="2" aim="pl" offset0="0" amount0="1" speed0="4" angle0="0" offset1="0" amount1="1" speed1="2" angle1="0"/>
+  <Script time="59.538" enemies="7" shotType="wave" bulletType="bubble" rows="2" aim="pl" offset0="0" amount0="1" speed0="4" angle0="0" offset1="0" amount1="1" speed1="2" angle1="0"/>
+  <Script time="59.538" enemies="7" shotType="normal" bulletType="hug" aim="pl" offset0="0" amount0="1" speed0="3" angle0="0"/>
+  <Script time="60.009" enemies="2,6" shotType="normal" bulletType="nrm" aim="mid" offset0="0" amount0="10" speed0="4" angle0="100"/>
+  <Script time="61.722" enemies="2,6" shotType="normal" bulletType="nrm" aim="mid" offset0="0" amount0="10" speed0="4" angle0="100"/>
+  <Script time="63.054" enemies="1" shotType="normal" bulletType="hug" aim="pl" offset0="0" amount0="1" speed0="3" angle0="0"/>
+  <Script time="63.056" enemies="1" shotType="wave" bulletType="bubble" rows="2" aim="pl" offset0="0" amount0="1" speed0="4" angle0="0" offset1="0" amount1="1" speed1="2" angle1="0"/>
+  <Script time="63.435" enemies="2,6" shotType="normal" bulletType="nrm" aim="mid" offset0="0" amount0="10" speed0="4" angle0="100"/>
+  <Script time="64.743" enemies="3" shotType="normal" bulletType="hug" aim="pl" offset0="0" amount0="1" speed0="3" angle0="0"/>
+  <Script time="64.746" enemies="3" shotType="wave" bulletType="bubble" rows="2" aim="pl" offset0="0" amount0="1" speed0="4" angle0="0" offset1="0" amount1="1" speed1="2" angle1="0"/>
+  <Script time="65.147" enemies="2,6" shotType="normal" bulletType="nrm" aim="mid" offset0="0" amount0="10" speed0="4" angle0="100"/>
+  <Script time="65.255" enemies="5" shotType="normal" bulletType="hug" aim="pl" offset0="0" amount0="1" speed0="3" angle0="0"/>
+  <Script time="65.257" enemies="5" shotType="wave" bulletType="bubble" rows="2" aim="pl" offset0="0" amount0="1" speed0="4" angle0="0" offset1="0" amount1="1" speed1="2" angle1="0"/>
+  <Script time="65.815" enemies="7" shotType="normal" bulletType="hug" aim="pl" offset0="0" amount0="1" speed0="3" angle0="0"/>
+  <Script time="65.817" enemies="7" shotType="wave" bulletType="bubble" rows="2" aim="pl" offset0="0" amount0="1" speed0="4" angle0="0" offset1="0" amount1="1" speed1="2" angle1="0"/>
+  <Script time="66.86" enemies="2,6" shotType="normal" bulletType="nrm" aim="mid" offset0="0" amount0="10" speed0="4" angle0="100"/>
+  <Script time="67.995" enemies="1,3,5,7" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="1"/>
+  <Script time="68.262" enemies="1,3,5,7" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="3" angle0="1"/>
+  <Script time="72.053" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="7" angle0="100" offset1="0" speed1="10" angle1="100" duration="0.783"/>
+  <Script time="72.871" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="73.038" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="73.206" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="73.37" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="73.764" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="7" angle0="100" offset1="0" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="74.46" enemies="2,6" shotType="wave" bulletType="nrm2" rows="2" aim="mid" offset0="0" amount0="5" speed0="9.5" angle0="25" offset1="0" amount1="5" speed1="8" angle1="25"/>
+  <Script time="75.477" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="7" angle0="100" offset1="0" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="76.178" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="76.346" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="76.513" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="76.68" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="77.188" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="7" angle0="100" offset1="0" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="77.921" enemies="2,6" shotType="wave" bulletType="nrm2" rows="2" aim="mid" offset0="0" amount0="5" speed0="9.5" angle0="25" offset1="0" amount1="5" speed1="8" angle1="25"/>
+  <Script time="78.902" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="7" angle0="100" offset1="0" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="79.683" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="79.851" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="80.018" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="80.185" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="30" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="80.616" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="7" angle0="100" offset1="0" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="81.359" enemies="2,6" shotType="wave" bulletType="nrm2" rows="2" aim="mid" offset0="0" amount0="5" speed0="9.5" angle0="25" offset1="0" amount1="5" speed1="8" angle1="25"/>
+  <Script time="82.324" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="40" speed0="5.5" angle0="80" offset1="40" speed1="7" angle1="80" duration="0.785"/>
+  <Script time="82.956" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="83.122" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="83.291" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="83.457" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="84.039" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="40" speed0="5.5" angle0="80" offset1="40" speed1="7" angle1="80" duration="0.788"/>
+  <Script time="84.819" enemies="2,6" shotType="wave" bulletType="nrm2" rows="2" aim="mid" offset0="0" amount0="6" speed0="9" angle0="90" offset1="0" amount1="6" speed1="5" angle1="90"/>
+  <Script time="85.754" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="40" speed0="5.5" angle0="80" offset1="40" speed1="7" angle1="80" duration="0.788"/>
+  <Script time="86.498" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="86.668" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="86.834" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="86.999" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="87.458" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="40" speed0="5.5" angle0="80" offset1="40" speed1="7" angle1="80" duration="0.788"/>
+  <Script time="88.272" enemies="2,6" shotType="wave" bulletType="nrm2" rows="2" aim="mid" offset0="0" amount0="6" speed0="9" angle0="90" offset1="0" amount1="6" speed1="5" angle1="90"/>
+  <Script time="89.178" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="40" speed0="5.5" angle0="80" offset1="40" speed1="7" angle1="80" duration="0.788"/>
+  <Script time="90.017" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="90.187" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="90.352" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="90.518" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="90.887" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="40" speed0="5.5" angle0="80" offset1="40" speed1="7" angle1="80" duration="0.788"/>
+  <Script time="91.794" enemies="2,6" shotType="wave" bulletType="nrm2" rows="2" aim="mid" offset0="0" amount0="6" speed0="9" angle0="90" offset1="0" amount1="6" speed1="5" angle1="90"/>
+  <Script time="92.606" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="40" speed0="5.5" angle0="80" offset1="40" speed1="7" angle1="80" duration="0.788"/>
+  <Script time="93.363" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="93.528" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="93.694" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="93.864" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="5.5" angle0="1"/>
+  <Script time="94.323" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="40" speed0="5.5" angle0="80" offset1="40" speed1="7" angle1="80" duration="0.787"/>
+  <Script time="95.138" enemies="2,6" shotType="wave" bulletType="nrm2" rows="2" aim="mid" offset0="0" amount0="6" speed0="9" angle0="90" offset1="0" amount1="6" speed1="5" angle1="90"/>
+  <Script time="96.033" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="40" speed0="6" angle0="100" offset1="40" speed1="10" angle1="100" duration="0.787"/>
+  <Script time="96.713" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="96.881" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="97.053" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="97.221" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="97.752" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="40" speed0="6" angle0="100" offset1="40" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="98.309" enemies="2,6" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="-30" amount0="9" speed0="7.5" angle0="60" offset1="-20" amount1="11" speed1="5.5" angle1="60"/>
+  <Script time="99.463" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="40" speed0="6" angle0="100" offset1="40" speed1="10" angle1="100" duration="0.787"/>
+  <Script time="100.227" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="100.397" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="100.564" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="100.737" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="101.18" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="40" speed0="6" angle0="100" offset1="40" speed1="10" angle1="100" duration="0.787"/>
+  <Script time="101.977" enemies="2,6" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="-30" amount0="9" speed0="7.5" angle0="60" offset1="-20" amount1="11" speed1="5.5" angle1="60"/>
+  <Script time="102.891" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="40" speed0="6" angle0="100" offset1="40" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="103.621" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="103.793" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="103.966" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="104.134" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="104.602" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="40" speed0="6" angle0="100" offset1="40" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="105.349" enemies="2,6" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="-30" amount0="9" speed0="7.5" angle0="60" offset1="-20" amount1="11" speed1="5.5" angle1="60"/>
+  <Script time="106.31" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="40" speed0="6" angle0="100" offset1="40" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="107.143" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="107.31" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="107.48" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="107.647" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="25" amount0="1" speed0="3.5" angle0="1"/>
+  <Script time="108.034" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="40" speed0="6" angle0="100" offset1="40" speed1="10" angle1="100" duration="0.788"/>
+  <Script time="108.773" enemies="2,6" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="-30" amount0="9" speed0="7.5" angle0="60" offset1="-20" amount1="11" speed1="5.5" angle1="60"/>
+  <Script time="109.745" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="8" angle0="100" offset1="0" speed1="10" angle1="30" duration="0.787"/>
+  <Script time="110.422" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="110.591" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="110.758" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="110.924" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="111.459" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="8.5" angle0="100" offset1="0" speed1="10" angle1="30" duration="0.787"/>
+  <Script time="112.191" enemies="2,6" shotType="wave" bulletType="nrm2" rows="5" aim="mid" offset0="0" amount0="3" speed0="9.5" angle0="5" offset1="0" amount1="3" speed1="7.5" angle1="5"/>
+  <Script time="113.168" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="8.5" angle0="100" offset1="0" speed1="10" angle1="30" duration="0.788"/>
+  <Script time="113.733" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="113.898" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="114.064" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="114.233" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="114.878" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="8.5" angle0="100" offset1="0" speed1="10" angle1="30" duration="0.788"/>
+  <Script time="115.741" enemies="2,6" shotType="wave" bulletType="nrm2" rows="5" aim="mid" offset0="0" amount0="3" speed0="9.5" angle0="5" offset1="0" amount1="3" speed1="7.5" angle1="5"/>
+  <Script time="116.595" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="8.5" angle0="100" offset1="0" speed1="10" angle1="30" duration="0.788"/>
+  <Script time="117.236" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="117.401" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="117.571" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="117.732" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="118.309" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="8.5" angle0="100" offset1="0" speed1="10" angle1="30" duration="0.788"/>
+  <Script time="119.066" enemies="2,6" shotType="wave" bulletType="nrm2" rows="5" aim="mid" offset0="0" amount0="3" speed0="9.5" angle0="5" offset1="0" amount1="3" speed1="7.5" angle1="5"/>
+  <Script time="120.022" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="8.5" angle0="100" offset1="0" speed1="10" angle1="30" duration="0.788"/>
+  <Script time="120.745" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="120.909" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="121.079" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="121.245" enemies="6" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4.5" angle0="1"/>
+  <Script time="121.743" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="4" offset0="0" speed0="8.5" angle0="100" offset1="0" speed1="10" angle1="30" duration="0.788"/>
+  <Script time="122.499" enemies="2,6" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="3" speed0="9.5" angle0="5" offset1="0" amount1="3" speed1="7.5" angle1="5"/>
+  <Script time="123.46" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="126.887" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="130.313" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="133.726" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="137.152" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.65"/>
+  <Script time="137.153" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="137.733" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="138.312" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="140.566" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="141.309" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="141.882" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="143.992" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="145.349" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="147.09" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="147.406" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="147.594" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="148.158" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="149.988" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="150.423" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="150.798" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="150.819" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="151.11" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="151.535" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="152.114" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="152.516" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="153.5" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="154.231" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="154.245" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.834"/>
+  <Script time="154.609" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="154.982" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="155.503" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="155.581" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="155.72" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="155.95" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="157.659" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.655"/>
+  <Script time="157.665" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="158.006" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="158.531" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="158.988" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="159.383" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="160.07" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="160.455" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="160.827" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="161.085" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="161.098" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="161.337" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="161.398" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="161.789" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="161.949" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="161.955" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="162.323" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="162.559" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="162.816" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="163.309" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="163.623" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="163.795" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="164.22" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="164.499" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="164.499" enemies="1" shotType="stream" bulletType="nrm" aim="mid" amount="1" offset0="-55" speed0="4" angle0="1" offset1="-55" speed1="4" angle1="1" duration="13.452"/>
+  <Script time="164.532" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="164.853" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="165.11" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="165.327" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="165.684" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="166.247" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="166.946" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="167.328" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="167.925" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="167.965" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="168.256" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="168.585" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="168.685" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="168.75" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="169.229" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="169.249" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="169.45" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="169.68" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="170.105" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="170.419" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="171.351" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="171.399" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="171.748" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="172.118" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="172.716" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="173.114" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="173.737" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="174.09" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="174.461" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="174.777" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="174.832" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="174.971" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="175.195" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="175.381" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="175.53" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="175.541" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="176.059" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="176.295" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="1" speed0="4" angle0="0"/>
+  <Script time="176.547" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="176.901" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="177.215" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="177.359" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="177.789" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="178.178" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="178.228" enemies="1" shotType="stream" bulletType="nrm" aim="mid" amount="2" offset0="-50" speed0="4" angle0="5" offset1="-50" speed1="4" angle1="5" duration="13.452"/>
+  <Script time="178.258" enemies="2" shotType="wave" bulletType="bubble" rows="3" aim="mid" offset0="-50" amount0="3" speed0="4" angle0="15" offset1="50" amount1="3" speed1="4" angle1="15"/>
+  <Script time="178.583" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="178.907" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="179.074" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="179.486" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="179.978" enemies="2" shotType="wave" bulletType="bubble" rows="3" aim="mid" offset0="-50" amount0="3" speed0="4" angle0="15" offset1="50" amount1="3" speed1="4" angle1="15"/>
+  <Script time="180.613" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="181.014" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="181.604" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="181.691" enemies="2" shotType="wave" bulletType="bubble" rows="3" aim="mid" offset0="-50" amount0="3" speed0="4" angle0="15" offset1="50" amount1="3" speed1="4" angle1="15"/>
+  <Script time="182.03" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="182.332" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="182.354" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="182.493" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="182.87" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="182.942" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="183.135" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="183.411" enemies="2" shotType="wave" bulletType="bubble" rows="3" aim="mid" offset0="-50" amount0="3" speed0="4" angle0="15" offset1="50" amount1="3" speed1="4" angle1="15"/>
+  <Script time="183.852" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="184.166" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="185.031" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="185.127" enemies="2" shotType="wave" bulletType="bubble" rows="3" aim="mid" offset0="-50" amount0="3" speed0="4" angle0="15" offset1="50" amount1="3" speed1="4" angle1="15"/>
+  <Script time="185.492" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="185.87" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="186.359" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="186.843" enemies="2" shotType="wave" bulletType="bubble" rows="3" aim="mid" offset0="-50" amount0="3" speed0="4" angle0="15" offset1="50" amount1="3" speed1="4" angle1="15"/>
+  <Script time="187.489" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="187.972" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="188.194" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="188.432" enemies="6" shotType="stream" bulletType="nrm" aim="pl" amount="3" offset0="0" speed0="3.5" angle0="0" offset1="0" speed1="5.5" angle1="10" duration="1.656"/>
+  <Script time="188.563" enemies="2" shotType="wave" bulletType="bubble" rows="3" aim="mid" offset0="-50" amount0="3" speed0="4" angle0="15" offset1="50" amount1="3" speed1="4" angle1="15"/>
+  <Script time="188.708" enemies="5" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="188.836" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="189.128" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="189.287" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="189.327" enemies="7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="0" amount0="5" speed0="5.5" angle0="100" offset1="0" amount1="5" speed1="4" angle1="100"/>
+  <Script time="189.801" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="190.035" enemies="2" shotType="normal" bulletType="bubble" aim="mid" offset0="0" amount0="3" speed0="4" angle0="15"/>
+  <Script time="190.279" enemies="2" shotType="wave" bulletType="bubble" rows="3" aim="mid" offset0="-50" amount0="3" speed0="4" angle0="15" offset1="50" amount1="3" speed1="4" angle1="15"/>
+  <Script time="191.084" enemies="3" shotType="normal" bulletType="nrm2" aim="mid" offset0="55" amount0="3" speed0="4" angle0="15"/>
+  <Script time="191.307" enemies="1,3,5,7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="35" amount0="5" speed0="5" angle0="90" offset1="35" amount1="5" speed1="4" angle1="90"/>
+  <Script time="191.78" enemies="1,3,5,7" shotType="wave" bulletType="nrm2" rows="3" aim="mid" offset0="-35" amount0="5" speed0="5" angle0="90" offset1="-35" amount1="5" speed1="4" angle1="90"/>
+  <Script time="198.943" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="-70" speed0="4" angle0="15" offset1="-10" speed1="7" angle1="15" duration="1.66"/>
+  <Script time="199.627" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="199.815" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="200.008" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="200.201" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="201.205" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="40" amount0="1" speed0="5" angle0="0" offset1="40" amount1="1" speed1="3" angle1="0"/>
+  <Script time="201.541" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="40" amount0="1" speed0="5" angle0="0" offset1="40" amount1="1" speed1="3" angle1="0"/>
+  <Script time="202.282" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="-70" speed0="4" angle0="15" offset1="-10" speed1="7" angle1="15" duration="1.664"/>
+  <Script time="203.139" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="203.331" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="203.524" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="203.712" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="204.721" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="40" amount0="1" speed0="5" angle0="0" offset1="40" amount1="1" speed1="3" angle1="0"/>
+  <Script time="205.057" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="40" amount0="1" speed0="5" angle0="0" offset1="40" amount1="1" speed1="3" angle1="0"/>
+  <Script time="205.686" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="-70" speed0="4" angle0="15" offset1="-10" speed1="7" angle1="15" duration="1.662"/>
+  <Script time="206.412" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="206.605" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="206.798" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="206.991" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="207.99" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="40" amount0="1" speed0="5" angle0="0" offset1="40" amount1="1" speed1="3" angle1="0"/>
+  <Script time="208.331" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="40" amount0="1" speed0="5" angle0="0" offset1="40" amount1="1" speed1="3" angle1="0"/>
+  <Script time="209.114" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="-70" speed0="4" angle0="15" offset1="-10" speed1="7" angle1="15" duration="1.662"/>
+  <Script time="209.745" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="209.938" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="210.126" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="210.324" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="2" angle0="0"/>
+  <Script time="211.323" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="40" amount0="1" speed0="5" angle0="0" offset1="40" amount1="1" speed1="3" angle1="0"/>
+  <Script time="211.669" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="40" amount0="1" speed0="5" angle0="0" offset1="40" amount1="1" speed1="3" angle1="0"/>
+  <Script time="212.483" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="70" speed0="4" angle0="15" offset1="10" speed1="7" angle1="15" duration="1.66"/>
+  <Script time="213.243" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="213.435" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="213.627" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="213.821" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="214.827" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="0" amount0="1" speed0="5" angle0="0" offset1="0" amount1="1" speed1="3" angle1="0"/>
+  <Script time="215.165" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="0" amount0="1" speed0="5" angle0="0" offset1="0" amount1="1" speed1="3" angle1="0"/>
+  <Script time="215.823" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="70" speed0="4" angle0="15" offset1="10" speed1="7" angle1="15" duration="1.664"/>
+  <Script time="216.76" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="216.946" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="217.138" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="217.332" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="218.344" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="0" amount0="1" speed0="5" angle0="0" offset1="0" amount1="1" speed1="3" angle1="0"/>
+  <Script time="218.682" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="0" amount0="1" speed0="5" angle0="0" offset1="0" amount1="1" speed1="3" angle1="0"/>
+  <Script time="219.221" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="70" speed0="4" angle0="15" offset1="10" speed1="7" angle1="15" duration="1.662"/>
+  <Script time="220.034" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="220.226" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="220.417" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="220.606" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="221.618" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="0" amount0="1" speed0="5" angle0="0" offset1="0" amount1="1" speed1="3" angle1="0"/>
+  <Script time="221.956" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="0" amount0="1" speed0="5" angle0="0" offset1="0" amount1="1" speed1="3" angle1="0"/>
+  <Script time="222.66" enemies="1,3,5,7" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="70" speed0="4" angle0="15" offset1="10" speed1="7" angle1="15" duration="1.66"/>
+  <Script time="223.362" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="223.557" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="223.745" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="223.937" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="0" amount0="1" speed0="2" angle0="0"/>
+  <Script time="224.943" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="0" amount0="1" speed0="5" angle0="0" offset1="0" amount1="1" speed1="3" angle1="0"/>
+  <Script time="225.287" enemies="6" shotType="wave" bulletType="nrm2" rows="4" aim="mid" offset0="0" amount0="1" speed0="5" angle0="0" offset1="0" amount1="1" speed1="3" angle1="0"/>
+  <Script time="226.103" enemies="1,5" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="-70" speed0="4" angle0="15" offset1="-10" speed1="7" angle1="15" duration="1.66"/>
+  <Script time="226.722" enemies="3,7" shotType="stream" bulletType="bubble" aim="mid" amount="1" offset0="0" speed0="7" angle0="0" offset1="0" speed1="7" angle1="0" duration="13.631"/>
+  <Script time="227.037" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="40" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="227.075" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="1" angle0="0"/>
+  <Script time="228.753" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="40" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="228.788" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="1" angle0="0"/>
+  <Script time="229.441" enemies="1,5" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="-70" speed0="4" angle0="15" offset1="-10" speed1="7" angle1="15" duration="1.664"/>
+  <Script time="230.465" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="40" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="230.506" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="1" angle0="0"/>
+  <Script time="232.181" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="40" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="232.219" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="1" angle0="0"/>
+  <Script time="232.84" enemies="1,5" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="-70" speed0="4" angle0="15" offset1="-10" speed1="7" angle1="15" duration="1.662"/>
+  <Script time="233.9" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="40" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="233.933" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="1" angle0="0"/>
+  <Script time="235.609" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="40" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="235.646" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="1" angle0="0"/>
+  <Script time="236.278" enemies="1,5" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="-70" speed0="4" angle0="15" offset1="-10" speed1="7" angle1="15" duration="1.662"/>
+  <Script time="237.328" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="40" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="237.363" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="1" angle0="0"/>
+  <Script time="239.044" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="40" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="239.081" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="40" amount0="1" speed0="1" angle0="0"/>
+  <Script time="239.633" enemies="1,5" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="70" speed0="4" angle0="15" offset1="10" speed1="7" angle1="15" duration="1.66"/>
+  <Script time="240.4" enemies="3,7" shotType="stream" bulletType="bubble" aim="mid" amount="1" offset0="-40" speed0="4" angle0="0" offset1="-10" speed1="7" angle1="0" duration="13.25"/>
+  <Script time="240.681" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="20" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="240.72" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="20" amount0="1" speed0="1" angle0="0"/>
+  <Script time="242.401" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="20" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="242.433" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="20" amount0="1" speed0="1" angle0="0"/>
+  <Script time="242.977" enemies="1,5" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="70" speed0="4" angle0="15" offset1="10" speed1="7" angle1="15" duration="1.664"/>
+  <Script time="244.113" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="20" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="244.151" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="20" amount0="1" speed0="1" angle0="0"/>
+  <Script time="245.828" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="20" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="245.864" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="20" amount0="1" speed0="1" angle0="0"/>
+  <Script time="246.37" enemies="1,5" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="70" speed0="4" angle0="15" offset1="10" speed1="7" angle1="15" duration="1.662"/>
+  <Script time="247.54" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="20" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="247.577" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="20" amount0="1" speed0="1" angle0="0"/>
+  <Script time="249.26" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="20" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="249.291" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="20" amount0="1" speed0="1" angle0="0"/>
+  <Script time="249.806" enemies="1,5" shotType="stream" bulletType="nrm" aim="mid" amount="3" offset0="70" speed0="4" angle0="15" offset1="10" speed1="7" angle1="15" duration="1.66"/>
+  <Script time="250.976" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="20" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="251.008" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="20" amount0="1" speed0="1" angle0="0"/>
+  <Script time="252.688" enemies="6" shotType="normal" bulletType="nrm2" aim="mid" offset0="20" amount0="2" speed0="1.5" angle0="0"/>
+  <Script time="252.725" enemies="2" shotType="normal" bulletType="hug" aim="mid" offset0="20" amount0="1" speed0="1" angle0="0"/>
+  <Script time="253.827" enemies="1" shotType="stream" bulletType="nrm" aim="mid" amount="5" offset0="70" speed0="4" angle0="80" offset1="10" speed1="4" angle1="80" duration="1.497"/>
+  <Script time="255.377" enemies="1" shotType="burst" bulletType="bubble" aim="mid" offset0="0" amount0="2" angle0="85" speed0="3.5" speed1="4.5"/>
+  <Script time="255.396" enemies="1" shotType="burst" bulletType="hug" aim="mid" offset0="0" amount0="1" angle0="75" speed0="3.5" speed1="4.5"/>
+  <Script time="257.321" enemies="2" shotType="stream" bulletType="nrm" aim="mid" amount="5" offset0="0" speed0="4" angle0="80" offset1="0" speed1="4" angle1="80" duration="1.497"/>
+  <Script time="258.864" enemies="2" shotType="burst" bulletType="bubble" aim="mid" offset0="0" amount0="2" angle0="85" speed0="3.5" speed1="4.5"/>
+  <Script time="258.89" enemies="2" shotType="burst" bulletType="hug" aim="mid" offset0="0" amount0="1" angle0="75" speed0="3.5" speed1="4.5"/>
+  <Script time="260.788" enemies="3" shotType="stream" bulletType="nrm" aim="mid" amount="5" offset0="0" speed0="4" angle0="80" offset1="0" speed1="4" angle1="80" duration="1.496"/>
+  <Script time="262.321" enemies="3" shotType="burst" bulletType="bubble" aim="mid" offset0="0" amount0="2" angle0="85" speed0="3.5" speed1="4.5"/>
+  <Script time="262.333" enemies="3" shotType="burst" bulletType="hug" aim="mid" offset0="0" amount0="1" angle0="75" speed0="3.5" speed1="4.5"/>
+  <Script time="264.249" enemies="5" shotType="stream" bulletType="nrm" aim="mid" amount="5" offset0="0" speed0="4" angle0="80" offset1="0" speed1="4" angle1="80" duration="1.497"/>
+  <Script time="265.795" enemies="5" shotType="burst" bulletType="bubble" aim="mid" offset0="0" amount0="2" angle0="85" speed0="3.5" speed1="4.5"/>
+  <Script time="265.818" enemies="5" shotType="burst" bulletType="hug" aim="mid" offset0="0" amount0="1" angle0="75" speed0="3.5" speed1="4.5"/>
+  <Script time="267.661" enemies="6" shotType="stream" bulletType="nrm" aim="mid" amount="5" offset0="0" speed0="4" angle0="80" offset1="0" speed1="4" angle1="80" duration="1.497"/>
+  <Script time="269.208" enemies="6" shotType="burst" bulletType="bubble" aim="mid" offset0="0" amount0="2" angle0="85" speed0="3.5" speed1="4.5"/>
+  <Script time="269.23" enemies="6" shotType="burst" bulletType="hug" aim="mid" offset0="0" amount0="1" angle0="75" speed0="3.5" speed1="4.5"/>
+  <Script time="271.166" enemies="7" shotType="stream" bulletType="nrm" aim="mid" amount="5" offset0="0" speed0="4" angle0="80" offset1="0" speed1="4" angle1="80" duration="1.497"/>
+  <Script time="272.714" enemies="7" shotType="burst" bulletType="bubble" aim="mid" offset0="0" amount0="2" angle0="85" speed0="3.5" speed1="4.5"/>
+  <Script time="272.735" enemies="7" shotType="burst" bulletType="hug" aim="mid" offset0="0" amount0="1" angle0="75" speed0="3.5" speed1="4.5"/>
+</Song>

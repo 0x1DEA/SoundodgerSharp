@@ -11,6 +11,7 @@ public class enemy : MonoBehaviour {
     void Start()
     {
         target = GameObject.Find("Enemies");
+        
     }
 
     void Update()
