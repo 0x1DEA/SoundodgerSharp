@@ -21,7 +21,7 @@ public class enemy : MonoBehaviour {
         Vector2 pointing = new Vector2(transform.position.x, transform.position.y);
         transform.up = pointing;
 
-        float ang = (i * Mathf.PI * 2f / game.enemies) + (target.transform.eulerAngles.z * (Mathf.PI / 180));
+        float ang = (i * Mathf.PI * 2f / level.enemies) + (target.transform.eulerAngles.z * (Mathf.PI / 180));
         Vector3 newPos = new Vector3(Mathf.Cos(ang) * radius, Mathf.Sin(ang) * radius, 0);
         transform.position = newPos;
     }

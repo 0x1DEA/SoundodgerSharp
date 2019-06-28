@@ -15,14 +15,7 @@ public class level : MonoBehaviour {
     public static int difficulty;
     public static int preview;
     
-    public static int color1;
-    public static int color2;
-    public static int color3;
-    public static int color4;
-    public static int color5;
-    public static int color6;
-    public static int color7;
-    public static int color8;
-    public static int color9;
+    // Will move to an array (eventually)
+    public static int[] color = new int[9];
 
 }
