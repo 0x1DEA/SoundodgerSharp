@@ -33,26 +33,53 @@ public class script : MonoBehaviour {
             } else {
                 float angle = _coneSize / _amount;
                 for (int i = 0; i < _amount; i++) {
-                    SpawnBullet("nrm", _enemies, _offset + (angle * (i + 1)) - (_coneSize / 2), _aim);
+                    SpawnBullet("nrm", _enemies, _offset - 5 + (angle * (i + 1)) - (_coneSize / 2), _aim);
                 }
             }
         }
 
-        public static void wave() {
-
+        public static void wave(int _rows, string _aim, string _bulletType, float _offset0, float _offset1, int _amount0, int _amount1, float _speed0, float  _speed1, float _coneSize0, float _coneSize1, int[] _enemies) {
+            if (_amount0 < 0)
+            {
+                // just spawn the flash
+            }
+            else
+            {
+                float angle = _coneSize0 / _amount0;
+                for (int i = 0; i < _amount0; i++)
+                {
+                    SpawnBullet("nrm", _enemies, _offset0 - 5 + (angle * (i + 1)) - (_coneSize0 / 2), _aim);
+                }
+            }
         }
 
         public static void stream() {
 
         }
 
-        public static void burst() {
-
+        public static void burst(string _aim, string _bulletType, float _offset, int _amount, float _speed0, float _speed1, float _coneSize, int[] _enemies) {
+            if (_amount < 0)
+            {
+                // just spawn the flash
+            }
+            else
+            {
+                System.Random random = new System.Random();
+                float angle = _coneSize / _amount;
+                for (int i = 0; i < _amount; i++)
+                {
+                    
+                    double sprandom = System.Math.Round(random.NextDouble() * (_speed1 - _speed0) + _speed0, 1);
+                    double conerandom = System.Math.Round(random.NextDouble() * (_coneSize - 1) + 1, 1);
+                    
+                    SpawnBullet("nrm", _enemies, _offset + (float)conerandom, _aim, (float)sprandom);
+                }
+            }
         }
     }
 
     // Make bullets, don't call directly, for use by pattern class methods
-    public static void SpawnBullet(string _bulletType, int[] _enemyNum, float _offset = 0, string _aim = "mid") {
+    public static void SpawnBullet(string _bulletType, int[] _enemyNum, float _offset = 0, string _aim = "mid", float _speed = 1.0f) {
 
         switch(_bulletType) {
             case "nrm":
@@ -89,6 +116,7 @@ public class script : MonoBehaviour {
             bullet bulletObject = bulletInstance.GetComponent<bullet>();
             bulletObject.offset = _offset;
             bulletObject.playerAimed = playerAimed;
+            bulletObject.speed = _speed / 100f;
         }
     }
 }

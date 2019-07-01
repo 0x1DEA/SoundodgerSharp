@@ -707,6 +707,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Score Circle
       objectReference: {fileID: 0}
+    - target: {fileID: 4253671066604207009, guid: 23aa5f22a01ab0f4891e1c6e44042cde,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3568164953914818965, guid: 23aa5f22a01ab0f4891e1c6e44042cde,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -776,6 +781,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Score Ring
+      objectReference: {fileID: 0}
+    - target: {fileID: -691820144751573540, guid: 4a36ab2441ff85349be5e268d6b1ff03,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5903211592438671927, guid: 4a36ab2441ff85349be5e268d6b1ff03,
         type: 3}
@@ -1035,6 +1045,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1562298538}
     m_Modifications:
+    - target: {fileID: 4253671066604207009, guid: 23aa5f22a01ab0f4891e1c6e44042cde,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3568164953914818965, guid: 23aa5f22a01ab0f4891e1c6e44042cde,
         type: 3}
       propertyPath: m_RootOrder

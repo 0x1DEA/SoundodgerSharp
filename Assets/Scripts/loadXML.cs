@@ -5,122 +5,137 @@ using System.Linq;
 using System.IO;
 using System.Xml;
 
-// Unsure if MonoBehavior is actually neccessary but i'm using Awake() to gett all this info before anything else happens
 public class loadXML : MonoBehaviour
 {
     // The XML file. For debugging purposes, needs to be defined in inspector
     public TextAsset xmlFile;
+    public static int bullets;
+    public static int warps;
 
     // Set all these before anything else so game doesn't shit itself complaining about missing stuff
     void Awake()
     {
-
-        // The good part
-        ParseXML(xmlFile.text);
+        // Parse our song info before it gets used anywhere else
+        parseInfo(xmlFile.text);
     }
-
     void Start() {
-        doStuff(xmlFile.text);
+        // after everything else has been set now we can parse our markers
+        parseMarkers(xmlFile.text);
     }
-    // Enum for all our bullet types
-    public enum IbulletType
-    {
-        nrm,
-        nrm2,
-        hug,
-        bubble,
-        heart,
-        homing
-    }
-    IbulletType bulletType;
-    public enum IshotType
-    {
-        normal,
-        wave,
-        stream,
-        burst
-    }
-    IshotType shotType;
 
-    void doStuff(string xmlData) {
+    void parseMarkers(string xmlData) {
+        // Loads our xml into an XmlDocument class
         XmlDocument xDoc = new XmlDocument();
         xDoc.Load(new StringReader(xmlData));
 
-        // For testing focusing only on grabbing bullets. Selecting all nodes which have 'bulletType' attribute.
-        // Keeping it in a variable since this 'magic value' will change over the course of our script
+        // The base of our query
         string query = "//Song//Script";
+        // This selects all bullets because all bullets and only bullets have the 'shotType' attribute
+        XmlNodeList bulletNodes = xDoc.SelectNodes(query + "[@shotType]");
+        // This selects all bullets because all warps and only warps have the 'warpType' attribute
+        XmlNodeList warpNodes = xDoc.SelectNodes(query + "[@warpType]");
 
-        // Do our query
-        XmlNodeList bullets = xDoc.SelectNodes(query + "[@bulletType='nrm']");
-        XmlNodeList timeWarps = xDoc.SelectNodes(query + "[@warpType='timeWarp']");
-        XmlNodeList spinRates = xDoc.SelectNodes(query + "[@warpType='spinRate']");
+        level.bulletStructs = new level.marker[bulletNodes.Count];
+        level.warpStructs = new level.marker[warpNodes.Count];
+        int i = 0;
         // Go through each bullet selected
-        foreach (XmlNode bullet in bullets)
+        foreach (XmlNode bullet in bulletNodes)
         {
 
-            // Get attributes all bullets have
-            string _shotType = bullet.Attributes["shotType"].Value;
-            string _bulletType = bullet.Attributes["bulletType"].Value;
-            string aim = bullet.Attributes["aim"].Value;
-            float offset = float.Parse(bullet.Attributes["offset0"].Value);
-            string enemies = bullet.Attributes["enemies"].Value;
-            float speed = float.Parse(bullet.Attributes["speed0"].Value);
-            float coneSize = float.Parse(bullet.Attributes["angle0"].Value);
-            int[] actual_enemies = enemies.Split(',').Select(s => int.Parse(s)).ToArray();
-            float time = float.Parse(bullet.Attributes["time"].Value);
+            // Assign or at least define all the Attributes a bullet can have
 
-            switch (_shotType)
-            {
+            /* The reason some are only defined now and assigned later is because not all bullets
+            *  have those values and we will get an error when trying to access them
+            */
+            switch(bullet.Attributes["shotType"].Value) {
                 case "normal":
-                    //shotType = IshotType.normal;
-                    int amount = int.Parse(bullet.Attributes["amount0"].Value);
-                    // Get shotType="normal" specific attributes
-
-                    // Run our functions from script.cs
-                    script.pattern.normal(aim, _bulletType, offset, amount, speed, coneSize, actual_enemies);
+                    level.bulletStructs[i].shotType = 0;
                     break;
                 case "wave":
-                    //shotType = IshotType.wave;
-
-                    // Get shotType="normal" specific attributes
-
-                    // Run our functions from script.cs
-                    //script.pattern.wave(aim, bulletType, offset, amount, speed, coneSize, actual_enemies);
+                    level.bulletStructs[i].shotType = 1;
                     break;
                 case "stream":
-                    //shotType = IshotType.stream;
-
-                    // Get shotType="normal" specific attributes
-
-                    // Run our functions from script.cs
-                    //script.pattern.stream(aim, bulletType, offset, amount, speed, coneSize, actual_enemies);
+                    level.bulletStructs[i].shotType = 2;
                     break;
-                default:
-                    // Bursts
-                    //shotType = IshotType.burst;
-
-                    // Get shotType="burst" specific attributes
-
-                    // Run our functions from script.cs
-                    //script.pattern.burst(aim, bulletType, offset, amount, speed, coneSize, actual_enemies);
+                case "burst":
+                    level.bulletStructs[i].shotType = 3;
                     break;
             }
+            switch (bullet.Attributes["bulletType"].Value) {
+                case "nrm":
+                    level.bulletStructs[i].bulletType = 0;
+                    break;
+                case "nrm2":
+                    level.bulletStructs[i].bulletType = 1;
+                    break;
+                case "bubblr":
+                    level.bulletStructs[i].bulletType = 2;
+                    break;
+                case "homing":
+                    level.bulletStructs[i].bulletType = 3;
+                    break;
+                case "hug":
+                    level.bulletStructs[i].bulletType = 4;
+                    break;
+                case "heart":
+                    level.bulletStructs[i].bulletType = 5;
+                    break;
+            }
+            switch (bullet.Attributes["aim"].Value) {
+                case "pl":
+                    level.bulletStructs[i].playerAimed = true;
+                    break;
+                case "mid":
+                    level.bulletStructs[i].playerAimed = false;
+                    break;
+            }
+            level.bulletStructs[i].offset0 = float.Parse(bullet.Attributes["offset0"].Value);
+            level.bulletStructs[i].offset1 = 0; // Default
+            string enemies = bullet.Attributes["enemies"].Value;
+            level.bulletStructs[i].enemies = enemies.Split(',').Select(s => int.Parse(s)).ToArray();
+            level.bulletStructs[i].speed0 = float.Parse(bullet.Attributes["speed0"].Value);
+            level.bulletStructs[i].speed1 = 0; // Default
+            level.bulletStructs[i].angle0 = float.Parse(bullet.Attributes["angle0"].Value);
+            level.bulletStructs[i].angle1 = 0; // Default
+            level.bulletStructs[i].time = float.Parse(bullet.Attributes["time"].Value);
+            level.bulletStructs[i].amount0 = 0; // Default
+            level.bulletStructs[i].amount1 = 0; // Default
+            level.bulletStructs[i].fired = false;
+
+            switch (level.bulletStructs[i].shotType)
+            {
+                case 0:
+                    // Get shotType="normal" specific attributes
+                    level.bulletStructs[i].amount0 = int.Parse(bullet.Attributes["amount0"].Value);
+                    break;
+                case 1:
+                    // Get shotType="wave" specific attributes
+                    level.bulletStructs[i].offset1 = float.Parse(bullet.Attributes["offset1"].Value);
+                    level.bulletStructs[i].speed1 = float.Parse(bullet.Attributes["speed1"].Value);
+                    level.bulletStructs[i].amount0 = int.Parse(bullet.Attributes["amount0"].Value);
+                    level.bulletStructs[i].amount1 = int.Parse(bullet.Attributes["amount1"].Value);
+                    level.bulletStructs[i].angle1 = float.Parse(bullet.Attributes["angle1"].Value);
+                    level.bulletStructs[i].rows = int.Parse(bullet.Attributes["rows"].Value);
+                    break;
+                case 2:
+                    // Get shotType="stream" specific attributes
+
+                    break;
+                case 3:
+                    // Get shotType="burst" specific attributes
+                    level.bulletStructs[i].amount0 = int.Parse(bullet.Attributes["amount0"].Value);
+                    level.bulletStructs[i].speed1 = float.Parse(bullet.Attributes["speed1"].Value);
+                    break;
+            }
+
+            i++;
         }
     }
 
-    void ParseXML(string xmlData) {
+    void parseInfo(string xmlData) {
         // Internet told me to do it this way
         XmlDocument xDoc = new XmlDocument();
         xDoc.Load(new StringReader(xmlData));
-
-        // For testing focusing only on grabbing bullets. Selecting all nodes which have 'bulletType' attribute.
-        // Keeping it in a variable since this 'magic value' will change over the course of our script
-        string query = "//Song//Script";
-
-        // Do our query
-        XmlNodeList bullets = xDoc.SelectNodes(query + "[@bulletType='nrm']");
-        XmlNodeList timeWarps = xDoc.SelectNodes(query + "[@warpType='timeWarp']");
-        XmlNodeList spinRates = xDoc.SelectNodes(query + "[@warpType='spinRate']");
 
         // All this only needs to be grabbed once, almost made the mistake of putting it in a foreach loop
         // Content creator info & technical jazz
@@ -137,7 +152,7 @@ public class loadXML : MonoBehaviour
         level.difficulty = int.Parse(Info.Attributes["difficulty"].Value);
         level.preview = int.Parse(Info.Attributes["audioPreview"].Value);
 
-        // Colors
+        // Colors are stored in an arrays
         level.color[0] = int.Parse(Info.Attributes["color1"].Value);
         level.color[1] = int.Parse(Info.Attributes["color2"].Value);
         level.color[2] = int.Parse(Info.Attributes["color3"].Value);

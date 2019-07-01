@@ -36,6 +36,7 @@ public class game : MonoBehaviour
             MakeRing();
             iframe = 0;
         }
+        level.checkMarkers();
     }
 
     void SpawnEnemies() {
