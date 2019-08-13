@@ -24,17 +24,17 @@ public class color : MonoBehaviour
     {
         if (parent)
         {
-            GetComponentInChildren<SpriteRenderer>().material.color = level.color[(int)num];
+            GetComponentInChildren<SpriteRenderer>().material.color = Level.color[(int)num];
         }
         else if (!parent && !cam && !arena)
         {
-            GetComponent<SpriteRenderer>().material.color = level.color[(int)num];
+            GetComponent<SpriteRenderer>().material.color = Level.color[(int)num];
         }
-        else if (cam && level.bgBlack)
+        else if (cam && Level.bgBlack)
         {
             GetComponent<Camera>().backgroundColor = new Color(0, 0, 0, 1);
         }
-        else if ((arena || !cam) && level.bgBlack)
+        else if ((arena || !cam) && Level.bgBlack)
         {
             GetComponent<SpriteRenderer>().material.color = new Color(0, 0, 0, 1);
         }

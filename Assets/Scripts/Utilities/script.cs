@@ -125,7 +125,7 @@ public class script : MonoBehaviour
             bullet bulletObject = bulletInstance.GetComponent<bullet>();
             bulletObject.offset = _offset;
             bulletObject.playerAimed = _aim;
-            bulletObject.speed = _speed / 120f;
+            bulletObject.speed = _speed / 50f;
         }
     }
 }

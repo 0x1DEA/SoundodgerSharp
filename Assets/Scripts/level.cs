@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Level : MonoBehaviour
-{
+public class Level : MonoBehaviour {
     // Level Attributes
     public static string nick;
     public static string title;
@@ -21,6 +20,9 @@ public class Level : MonoBehaviour
 
     // Vars for logic
     public static int lastBullet;
+    public static int lastWarp;
+    public static float timeWarp = 1f;
+    public static float spinRate = 0f;
     public static GameObject player;
 
     // Thing that XML gets parsed into
@@ -52,84 +54,61 @@ public class Level : MonoBehaviour
     public static marker[] bulletStructs;
     public static marker[] warpStructs;
 
-    void Awake()
-    {
+    void Awake() {
         lastBullet = 0;
+        lastWarp = 0;
         player = GameObject.Find("Player");
+    }
+
+    void Start() {
+        song = GetComponent<AudioSource>();
+        song.Play();
     }
 
     /*
     ** Runs every game update, fires patterns
     ** Starts from the last fired marker in it's type
     */
-    public static void checkMarkers()
-    {
-        int ii = 0;
-        /*foreach (marker mark in bulletStructs)
-        {
-            if (!bulletStructs[iteration].fired && (bulletStructs[iteration].time < game.source.time + Time.deltaTime))
-            {
-                switch (bulletStructs[iteration].shotType)
-                {
-                    case 0:
-                        script.pattern.normal(bulletStructs[iteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].amount0, bulletStructs[iteration].speed0, bulletStructs[iteration].angle0, bulletStructs[iteration].enemies);
-                        break;
-                    case 1:
-                        script.pattern.wave(bulletStructs[iteration].rows, bulletStructs[iteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].offset1, bulletStructs[iteration].amount0, bulletStructs[iteration].amount1, bulletStructs[iteration].speed0, bulletStructs[iteration].speed1, bulletStructs[iteration].angle0, bulletStructs[iteration].angle1, bulletStructs[iteration].enemies);
-                        break;
-                    case 2:
-                        //script.pattern.normal(bulletStructs[iteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].amount0, bulletStructs[iteration].speed0, bulletStructs[iteration].angle0, bulletStructs[iteration].enemies);
-                        break;
-                    case 3:
-                        script.pattern.burst(bulletStructs[iteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].amount0, bulletStructs[iteration].speed0, bulletStructs[iteration].speed1, bulletStructs[iteration].angle0, bulletStructs[iteration].enemies);
-                        break;
-                }
-                bulletStructs[i].fired = true;
-            }
-            i++;
-        }*/
-        for (int iteration = lastBullet; iteration < bulletStructs.Length; iteration++)
-        {
-            if (bulletStructs[iteration].fired || (bulletStructs[iteration].time > source.time + Time.deltaTime)) {
-                lastBullet = iteration;
-                iteration = bulletStructs.Length;
+    public static void checkMarkers() {
+        for (int bulletIteration = lastBullet; bulletIteration < bulletStructs.Length; bulletIteration++) {
+            if (bulletStructs[bulletIteration].fired || (bulletStructs[bulletIteration].time > song.time + Time.deltaTime)) {
+                lastBullet = bulletIteration;
+                bulletIteration = bulletStructs.Length;
             } 
-            else if (!bulletStructs[iteration].fired && (bulletStructs[iteration].time < source.time + Time.deltaTime))
-            {
-                switch (bulletStructs[iteration].shotType)
+            else if (!bulletStructs[bulletIteration].fired && (bulletStructs[bulletIteration].time < song.time + Time.deltaTime)) {
+                switch (bulletStructs[bulletIteration].shotType)
                 {
                     case 0:
-                        script.pattern.normal(bulletStructs[iteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].amount0, bulletStructs[iteration].speed0, bulletStructs[iteration].angle0, bulletStructs[iteration].enemies);
+                        script.pattern.normal(bulletStructs[bulletIteration].playerAimed, bulletStructs[bulletIteration].bulletType, bulletStructs[bulletIteration].offset0, bulletStructs[bulletIteration].amount0, bulletStructs[bulletIteration].speed0, bulletStructs[bulletIteration].angle0, bulletStructs[bulletIteration].enemies);
                         break;
                     case 1:
-                        script.pattern.wave(bulletStructs[iteration].rows, bulletStructs[iteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].offset1, bulletStructs[iteration].amount0, bulletStructs[iteration].amount1, bulletStructs[iteration].speed0, bulletStructs[iteration].speed1, bulletStructs[iteration].angle0, bulletStructs[iteration].angle1, bulletStructs[iteration].enemies);
+                        script.pattern.wave(bulletStructs[bulletIteration].rows, bulletStructs[bulletIteration].playerAimed, bulletStructs[bulletIteration].bulletType, bulletStructs[bulletIteration].offset0, bulletStructs[bulletIteration].offset1, bulletStructs[bulletIteration].amount0, bulletStructs[bulletIteration].amount1, bulletStructs[bulletIteration].speed0, bulletStructs[bulletIteration].speed1, bulletStructs[bulletIteration].angle0, bulletStructs[bulletIteration].angle1, bulletStructs[bulletIteration].enemies);
                         break;
                     case 2:
-                        //script.pattern.normal(bulletStructs[iteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].amount0, bulletStructs[iteration].speed0, bulletStructs[iteration].angle0, bulletStructs[iteration].enemies);
+                        // script.pattern.normal(bulletStructs[bulletIteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].amount0, bulletStructs[iteration].speed0, bulletStructs[iteration].angle0, bulletStructs[iteration].enemies);
                         break;
                     case 3:
-                        script.pattern.burst(bulletStructs[iteration].playerAimed, bulletStructs[iteration].bulletType, bulletStructs[iteration].offset0, bulletStructs[iteration].amount0, bulletStructs[iteration].speed0, bulletStructs[iteration].speed1, bulletStructs[iteration].angle0, bulletStructs[iteration].enemies);
+                        script.pattern.burst(bulletStructs[bulletIteration].playerAimed, bulletStructs[bulletIteration].bulletType, bulletStructs[bulletIteration].offset0, bulletStructs[bulletIteration].amount0, bulletStructs[bulletIteration].speed0, bulletStructs[bulletIteration].speed1, bulletStructs[bulletIteration].angle0, bulletStructs[bulletIteration].enemies);
                         break;
                 }
-                bulletStructs[iteration].fired = true;
+                bulletStructs[bulletIteration].fired = true;
             }
         }
-        foreach (marker warp in warpStructs)
-        {
-            if (!warp.fired && (warp.time < game.source.time + Time.deltaTime))
-            {
-                switch (warp.warpType)
-                {
+        for (int warpIteration = lastWarp; warpIteration < warpStructs.Length; warpIteration++) {
+            if (warpStructs[warpIteration].fired || (warpStructs[warpIteration].time > song.time + Time.deltaTime)) {
+                lastWarp = warpIteration;
+                warpIteration = warpStructs.Length;
+            } else if (!warpStructs[warpIteration].fired && (warpStructs[warpIteration].time < song.time + Time.deltaTime)) {
+                switch (warpStructs[warpIteration].warpType) {
                     case 0:
-                        game.spinRate = warp.val;
+                        spinRate = warpStructs[warpIteration].val;
                         break;
                     case 1:
-                        game.timeWarp = warp.val;
+                        timeWarp = warpStructs[warpIteration].val;
                         break;
                 }
-                warpStructs[ii].fired = true;
+                warpStructs[warpIteration].fired = true;
             }
-            ii++;
         }
     }
 }

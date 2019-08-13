@@ -2,30 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bullet : MonoBehaviour
-{
-    private float arenaRadius = 4.2f;
-    private float bulletRadius = 0.2f;
-    private float life;
-    private bool insideArena = false;
+public class bullet : MonoBehaviour {
 
     // XML data
     public float offset;
     public bool playerAimed;
     public float speed;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    // Logic
+    private float arenaRadius = 4.2f;
+    private float bulletRadius = 0.2f;
+    private float life;
+    private bool insideArena = false;
 
-        if (playerAimed)
-        {
+    void Start() {
 
-            float pointing = Mathf.Atan2(game.player.transform.position.y, game.player.transform.position.x) * Mathf.Rad2Deg;
-            transform.up = game.player.transform.position - transform.position;
+        if (playerAimed) {
+
+            float pointing = Mathf.Atan2(Level.player.transform.position.y, Level.player.transform.position.x) * Mathf.Rad2Deg;
+            transform.up = Level.player.transform.position - transform.position;
         }
-        else
-        {
+        else {
 
             Vector2 pointing = new Vector2(-transform.position.x, -transform.position.y);
             transform.up = pointing;
@@ -33,23 +30,19 @@ public class bullet : MonoBehaviour
 
         transform.Rotate(0, 0, offset);
 
-        GetComponentInChildren<SpriteRenderer>().material.color = level.color[0];
+        GetComponentInChildren<SpriteRenderer>().material.color = Level.color[0];
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update() {
         life += 0.1f;
 
-        transform.position += transform.TransformDirection(new Vector2(0, speed * game.timeWarp));
-
-        float playerY = transform.position.y;
-        float playerX = transform.position.x;
-        if (Mathf.Sqrt(Mathf.Pow(playerY, 2) + Mathf.Pow(playerX, 2)) < arenaRadius - bulletRadius)
+        transform.position += transform.TransformDirection(new Vector2(0, speed * Level.timeWarp));
+        
+        if (Mathf.Sqrt(Mathf.Pow(transform.position.y, 2) + Mathf.Pow(transform.position.x, 2)) < arenaRadius - bulletRadius)
         {
             insideArena = true;
         }
-        if (((Mathf.Sqrt(Mathf.Pow(playerY, 2) + Mathf.Pow(playerX, 2)) > arenaRadius - bulletRadius) && insideArena == true) || !insideArena && life > 20f)
+        if (((Mathf.Sqrt(Mathf.Pow(transform.position.y, 2) + Mathf.Pow(transform.position.x, 2)) > arenaRadius - bulletRadius) && insideArena == true) || !insideArena && life > 10f)
         {
             Destroy(gameObject);
         }

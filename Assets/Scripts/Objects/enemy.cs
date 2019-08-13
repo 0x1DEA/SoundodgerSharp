@@ -12,7 +12,7 @@ public class enemy : MonoBehaviour {
 
     void Start()
     {
-        target = GameObject.Find("Enemies");
+        target = GameObject.Find("Rotator");
         
     }
 
@@ -23,8 +23,8 @@ public class enemy : MonoBehaviour {
         Vector2 pointing = new Vector2(transform.position.x, transform.position.y);
         transform.up = pointing;
 
-        float ang = (i * Mathf.PI * 2f / level.enemies) + (target.transform.eulerAngles.z * (Mathf.PI / 180));
-        Vector3 newPos = new Vector3(Mathf.Cos(ang) * radius, Mathf.Sin(ang) * radius, 0);
+        float ang = (i * Mathf.PI * 2f / Level.enemies) + (target.transform.eulerAngles.z * (Mathf.PI / 180));
+        Vector3 newPos = new Vector3(Mathf.Cos(ang) * radius + target.transform.position.x, Mathf.Sin(ang) * radius + target.transform.position.y, 0);
         transform.position = newPos;
     }
 }
