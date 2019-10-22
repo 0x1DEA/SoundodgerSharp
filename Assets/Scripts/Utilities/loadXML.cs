@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,32 +27,32 @@ public class LoadXML : MonoBehaviour {
         xDoc.Load(new StringReader(xmlData));
 
         // This selects all warps because all warps and only warps have the 'warpType' attribute
-        XmlNodeList RateNodes = xDoc.SelectNodes("//Song//Script[@warpType='spinRate']");
+        XmlNodeList spinRateNodes = xDoc.SelectNodes("//Song//Script[@warpType='spinRate']");
         // This selects all warps because all warps and only warps have the 'warpType' attribute
-        XmlNodeList WarpNodes = xDoc.SelectNodes("//Song//Script[@warpType='timeWarp']");
+        XmlNodeList timeWarpNodes = xDoc.SelectNodes("//Song//Script[@warpType='timeWarp']");
         // This selects all bullets because all bullets and only bullets have the 'shotType' attribute
-        XmlNodeList BulletNodes = xDoc.SelectNodes("//Song//Script[@shotType]");
+        XmlNodeList bulletNodes = xDoc.SelectNodes("//Song//Script[@shotType]");
 
-        Level.warpStructs = new Level.marker[WarpNodes.Count];
-        Level.rateStructs = new Level.marker[RateNodes.Count];
-        Level.bulletStructs = new Level.marker[BulletNodes.Count];
+        Level.timeWarps = new Level.marker[WarpNodes.Count];
+        Level.spinRates = new Level.marker[RateNodes.Count];
+        Level.bullets = new Level.marker[BulletNodes.Count];
 
         int k = 0;
         int i = 0;
         int j = 0;
 
-        foreach (XmlNode warpMarker in WarpNodes) {
-            Level.warpStructs[k].warpType = 1;
-            Level.warpStructs[k].val = float.Parse(warpMarker.Attributes["val"].Value);
-            Level.warpStructs[k].time = float.Parse(warpMarker.Attributes["time"].Value);
+        foreach (XmlNode timeMarker in WarpNodes) {
+            Level.timeWarps[k].warpType = 1;
+            Level.timeWarps[k].val = float.Parse(timeWarpMarker.Attributes["val"].Value);
+            Level.timeWarps[k].time = float.Parse(timeWarpMarker.Attributes["time"].Value);
             k++;
         }
 
-        foreach (XmlNode rateMarker in RateNodes)
+        foreach (XmlNode spinRateMarker in RateNodes)
         {
-            Level.rateStructs[j].warpType = 0;
-            Level.rateStructs[j].val = float.Parse(rateMarker.Attributes["val"].Value);
-            Level.rateStructs[j].time = float.Parse(rateMarker.Attributes["time"].Value);
+            Level.spinRates[j].warpType = 0;
+            Level.spinRates[j].val = float.Parse(spinRateMarker.Attributes["val"].Value);
+            Level.spinRates[j].time = float.Parse(spinRateMarker.Attributes["time"].Value);
             j++;
         }
 
@@ -60,73 +60,73 @@ public class LoadXML : MonoBehaviour {
         foreach (XmlNode bulletMarker in BulletNodes) {
             switch (bulletMarker.Attributes["shotType"].Value) {
                 case "normal":
-                    Level.bulletStructs[i].shotType = 0;
+                    Level.bullets[i].shotType = 0;
                     break;
                 case "wave":
-                    Level.bulletStructs[i].shotType = 1;
+                    Level.bullets[i].shotType = 1;
                     break;
                 case "stream":
-                    Level.bulletStructs[i].shotType = 2;
+                    Level.bullets[i].shotType = 2;
                     break;
                 case "burst":
-                    Level.bulletStructs[i].shotType = 3;
+                    Level.bullets[i].shotType = 3;
                     break;
             }
             switch (bulletMarker.Attributes["bulletType"].Value) {
                 case "nrm":
-                    Level.bulletStructs[i].bulletType = 0;
+                    Level.bullets[i].bulletType = 0;
                     break;
                 case "nrm2":
-                    Level.bulletStructs[i].bulletType = 1;
+                    Level.bullets[i].bulletType = 1;
                     break;
                 case "bubble":
-                    Level.bulletStructs[i].bulletType = 2;
+                    Level.bullets[i].bulletType = 2;
                     break;
                 case "homing":
-                    Level.bulletStructs[i].bulletType = 3;
+                    Level.bullets[i].bulletType = 3;
                     break;
                 case "hug":
-                    Level.bulletStructs[i].bulletType = 4;
+                    Level.bullets[i].bulletType = 4;
                     break;
                 case "heart":
-                    Level.bulletStructs[i].bulletType = 5;
+                    Level.bullets[i].bulletType = 5;
                     break;
             }
             switch (bulletMarker.Attributes["aim"].Value) {
                 case "pl":
-                    Level.bulletStructs[i].playerAimed = true;
+                    Level.bullets[i].playerAimed = true;
                     break;
                 case "mid":
-                    Level.bulletStructs[i].playerAimed = false;
+                    Level.bullets[i].playerAimed = false;
                     break;
             }
 
-            Level.bulletStructs[i].offset0 = float.Parse(bulletMarker.Attributes["offset0"].Value);
-            Level.bulletStructs[i].offset1 = 0; // Default
+            Level.bullets[i].offset0 = float.Parse(bulletMarker.Attributes["offset0"].Value);
+            Level.bullets[i].offset1 = 0; // Default
             string enemies = bulletMarker.Attributes["enemies"].Value;
-            Level.bulletStructs[i].enemies = enemies.Split(',').Select(s => int.Parse(s)).ToArray();
-            Level.bulletStructs[i].speed0 = float.Parse(bulletMarker.Attributes["speed0"].Value);
-            Level.bulletStructs[i].speed1 = 0; // Default
-            Level.bulletStructs[i].angle0 = float.Parse(bulletMarker.Attributes["angle0"].Value);
-            Level.bulletStructs[i].angle1 = 0; // Default
-            Level.bulletStructs[i].time = float.Parse(bulletMarker.Attributes["time"].Value);
-            Level.bulletStructs[i].amount0 = 0; // Default
-            Level.bulletStructs[i].amount1 = 0; // Default
-            Level.bulletStructs[i].fired = false;
+            Level.bullets[i].enemies = enemies.Split(',').Select(s => int.Parse(s)).ToArray();
+            Level.bullets[i].speed0 = float.Parse(bulletMarker.Attributes["speed0"].Value);
+            Level.bullets[i].speed1 = 0; // Default
+            Level.bullets[i].angle0 = float.Parse(bulletMarker.Attributes["angle0"].Value);
+            Level.bullets[i].angle1 = 0; // Default
+            Level.bullets[i].time = float.Parse(bulletMarker.Attributes["time"].Value);
+            Level.bullets[i].amount0 = 0; // Default
+            Level.bullets[i].amount1 = 0; // Default
+            Level.bullets[i].fired = false;
 
-            switch (Level.bulletStructs[i].shotType) {
+            switch (Level.bullets[i].shotType) {
                 case 0:
                     // Get shotType="normal" specific attributes
-                    Level.bulletStructs[i].amount0 = int.Parse(bulletMarker.Attributes["amount0"].Value);
+                    Level.bullets[i].amount0 = int.Parse(bulletMarker.Attributes["amount0"].Value);
                     break;
                 case 1:
                     // Get shotType="wave" specific attributes
-                    Level.bulletStructs[i].offset1 = float.Parse(bulletMarker.Attributes["offset1"].Value);
-                    Level.bulletStructs[i].speed1 = float.Parse(bulletMarker.Attributes["speed1"].Value);
-                    Level.bulletStructs[i].amount0 = int.Parse(bulletMarker.Attributes["amount0"].Value);
-                    Level.bulletStructs[i].amount1 = int.Parse(bulletMarker.Attributes["amount1"].Value);
-                    Level.bulletStructs[i].angle1 = float.Parse(bulletMarker.Attributes["angle1"].Value);
-                    Level.bulletStructs[i].rows = int.Parse(bulletMarker.Attributes["rows"].Value);
+                    Level.bullets[i].offset1 = float.Parse(bulletMarker.Attributes["offset1"].Value);
+                    Level.bullets[i].speed1 = float.Parse(bulletMarker.Attributes["speed1"].Value);
+                    Level.bullets[i].amount0 = int.Parse(bulletMarker.Attributes["amount0"].Value);
+                    Level.bullets[i].amount1 = int.Parse(bulletMarker.Attributes["amount1"].Value);
+                    Level.bullets[i].angle1 = float.Parse(bulletMarker.Attributes["angle1"].Value);
+                    Level.bullets[i].rows = int.Parse(bulletMarker.Attributes["rows"].Value);
                     break;
                 case 2:
                     // Get shotType="stream" specific attributes
@@ -134,8 +134,8 @@ public class LoadXML : MonoBehaviour {
                     break;
                 case 3:
                     // Get shotType="burst" specific attributes
-                    Level.bulletStructs[i].amount0 = int.Parse(bulletMarker.Attributes["amount0"].Value);
-                    Level.bulletStructs[i].speed1 = float.Parse(bulletMarker.Attributes["speed1"].Value);
+                    Level.bullets[i].amount0 = int.Parse(bulletMarker.Attributes["amount0"].Value);
+                    Level.bullets[i].speed1 = float.Parse(bulletMarker.Attributes["speed1"].Value);
                     break;
             }
             i++;
@@ -160,11 +160,19 @@ public class LoadXML : MonoBehaviour {
         Level.enemies = float.Parse(Info.Attributes["enemies"].Value);
         Level.difficulty = int.Parse(Info.Attributes["difficulty"].Value);
         Level.preview = int.Parse(Info.Attributes["audioPreview"].Value);
+        
         // SD XML does not require the following 2 options. Set to false if unset.
-
-
-        Level.bgBlack = bool.Parse(Info.Attributes["bgBlack"].Value);
-        Level.containsHeart = bool.Parse(Info.Attributes["containsHeart"].Value);
+        if (Info.Attributes["bgBlack"] != null) {
+        	Level.bgBlack = bool.Parse(Info.Attributes["bgBlack"].Value);
+        } else {
+        	Level.bgBlack = false;
+        }
+        
+        if (Info.Attributes["containsHeart"] != null) {
+        	Level.containsHeart = bool.Parse(Info.Attributes["containsHeart"].Value);	
+        } else {
+        	Level.containsHeart = false;
+        }
 
         // Colors are stored in an arrays
         Level.color[0] = decToColor(Info.Attributes["color1"].Value);
