@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bullet : MonoBehaviour {
-
+public class Bullet : MonoBehaviour
+{
     // XML data
     public float offset;
     public bool playerAimed;
@@ -15,15 +15,15 @@ public class bullet : MonoBehaviour {
     private float life;
     private bool insideArena = false;
 
-    void Start() {
-
-        if (playerAimed) {
-
+    void Start()
+    {
+        if (playerAimed)
+        {
             float pointing = Mathf.Atan2(Level.player.transform.position.y, Level.player.transform.position.x) * Mathf.Rad2Deg;
             transform.up = Level.player.transform.position - transform.position;
         }
-        else {
-
+        else
+        {
             Vector2 pointing = new Vector2(-transform.position.x, -transform.position.y);
             transform.up = pointing;
         }
@@ -33,7 +33,8 @@ public class bullet : MonoBehaviour {
         GetComponentInChildren<SpriteRenderer>().material.color = Level.color[0];
     }
 
-    void Update() {
+    void Update()
+    {
         life += 0.1f;
 
         transform.position += transform.TransformDirection(new Vector2(0, speed * Level.timeWarp));

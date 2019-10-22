@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class flash : MonoBehaviour
+public class Flash : MonoBehaviour
 {
     private float alpha;
-    // Start is called before the first frame update
+
     void Start()
     {
         GetComponent<Renderer>().material.color = new Color(1.0f, 1.0f, 1.0f, 0f);
         alpha = GetComponent<Renderer>().material.color.a;
     }
 
-    // Update is called once per frame
     void Update()
     {
         

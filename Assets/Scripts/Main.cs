@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
 
 public class Main : MonoBehaviour {
     public float radius;
@@ -32,13 +31,25 @@ public class Main : MonoBehaviour {
                 warpIteration++;
             }
             Level.song.time = 0;
+            Level.lastBullet = 0;
+            Level.lastWarp = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Level.spinRate += 1;
+        }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Level.spinRate -= 1;
         }
 
         iframe++;
-        if (iframe > 20) {
+
+        if (iframe > 30) {
             MakeRing();
             iframe = 0;
         }
+
         Level.checkMarkers();
     }
 
@@ -48,7 +59,7 @@ public class Main : MonoBehaviour {
             Vector3 newPos = new Vector3(Mathf.Cos(ang) * radius, Mathf.Sin(ang) * radius, 0);
             GameObject enemyInstance = Instantiate(enemy, newPos, Quaternion.identity);
             enemyInstance.gameObject.name = (i + 1).ToString();
-            enemy enemyObject = enemyInstance.GetComponent<enemy>();
+            Enemy enemyObject = enemyInstance.GetComponent<Enemy>();
             enemyObject.i = i + 1;
         }
     }

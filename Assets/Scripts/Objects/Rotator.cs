@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rotator : MonoBehaviour {
-    void Start()
+public class Rotator : MonoBehaviour
+{
+    public float thing;
+
+    void Update()
     {
-        
-    }
-    
-    void Update() {
-        transform.Rotate(0,0, Level.spinRate / 4f * Level.timeWarp);
+        thing = Level.spinRate;
+        gameObject.transform.Rotate(0, 0, thing / 4f * Level.timeWarp);
     }
 }

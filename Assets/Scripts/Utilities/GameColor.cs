@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class color : MonoBehaviour
+public class GameColor : MonoBehaviour
 {
-    public enum Enum
+    public enum LevelColor
     {
         LinearA,
         LinearB,
         Homing,
         Bubble,
-        Hug,
         Outlines,
-        Outerrings,
-        slowmobg,
-        scorecircle
+        OuterRings,
+        SlowMoBG,
+        ScoreCircle,
+        Hug
     };
-    public Enum num;
+    public LevelColor num;
     public bool parent;
     public bool cam;
     public bool arena;

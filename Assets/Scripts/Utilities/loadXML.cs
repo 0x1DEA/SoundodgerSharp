@@ -5,7 +5,7 @@ using System.Linq;
 using System.IO;
 using System.Xml;
 
-public class loadXML : MonoBehaviour {
+public class LoadXML : MonoBehaviour {
     // The XML file. For debugging purposes, needs to be defined in inspector
     public TextAsset xmlFile;
     public static int bullets;
@@ -19,35 +19,41 @@ public class loadXML : MonoBehaviour {
     void Start() {
         // after everything else has been set now we can parse our markers
         parseMarkers(xmlFile.text);
+        Level.sortWarps();
     }
 
     void parseMarkers(string xmlData) {
         XmlDocument xDoc = new XmlDocument();
         xDoc.Load(new StringReader(xmlData));
 
+        // This selects all warps because all warps and only warps have the 'warpType' attribute
+        XmlNodeList RateNodes = xDoc.SelectNodes("//Song//Script[@warpType='spinRate']");
+        // This selects all warps because all warps and only warps have the 'warpType' attribute
+        XmlNodeList WarpNodes = xDoc.SelectNodes("//Song//Script[@warpType='timeWarp']");
         // This selects all bullets because all bullets and only bullets have the 'shotType' attribute
-        XmlNodeList WarpNodes = xDoc.SelectNodes("//Song//Script[@warpType]");
         XmlNodeList BulletNodes = xDoc.SelectNodes("//Song//Script[@shotType]");
 
         Level.warpStructs = new Level.marker[WarpNodes.Count];
+        Level.rateStructs = new Level.marker[RateNodes.Count];
         Level.bulletStructs = new Level.marker[BulletNodes.Count];
+
+        int k = 0;
         int i = 0;
-        int ii = 0;
+        int j = 0;
 
         foreach (XmlNode warpMarker in WarpNodes) {
-            switch (warpMarker.Attributes["warpType"].Value)
-            {
-                case "spinRate":
-                    Level.warpStructs[ii].warpType = 0;
-                    Level.warpStructs[ii].val = float.Parse(warpMarker.Attributes["val"].Value);
-                    break;
-                case "timeWarp":
-                    Level.warpStructs[ii].warpType = 1;
-                    Level.warpStructs[ii].val = float.Parse(warpMarker.Attributes["val"].Value);
-                    break;
-            }
-            Level.warpStructs[ii].time = float.Parse(warpMarker.Attributes["time"].Value);
-            ii++;
+            Level.warpStructs[k].warpType = 1;
+            Level.warpStructs[k].val = float.Parse(warpMarker.Attributes["val"].Value);
+            Level.warpStructs[k].time = float.Parse(warpMarker.Attributes["time"].Value);
+            k++;
+        }
+
+        foreach (XmlNode rateMarker in RateNodes)
+        {
+            Level.rateStructs[j].warpType = 0;
+            Level.rateStructs[j].val = float.Parse(rateMarker.Attributes["val"].Value);
+            Level.rateStructs[j].time = float.Parse(rateMarker.Attributes["time"].Value);
+            j++;
         }
 
         // Go through each bullet selected
@@ -154,22 +160,25 @@ public class loadXML : MonoBehaviour {
         Level.enemies = float.Parse(Info.Attributes["enemies"].Value);
         Level.difficulty = int.Parse(Info.Attributes["difficulty"].Value);
         Level.preview = int.Parse(Info.Attributes["audioPreview"].Value);
+        // SD XML does not require the following 2 options. Set to false if unset.
+
+
         Level.bgBlack = bool.Parse(Info.Attributes["bgBlack"].Value);
         Level.containsHeart = bool.Parse(Info.Attributes["containsHeart"].Value);
 
         // Colors are stored in an arrays
-        Level.color[0] = ConvertToColor(Info.Attributes["color1"].Value);
-        Level.color[1] = ConvertToColor(Info.Attributes["color2"].Value);
-        Level.color[2] = ConvertToColor(Info.Attributes["color3"].Value);
-        Level.color[3] = ConvertToColor(Info.Attributes["color4"].Value);
-        Level.color[4] = ConvertToColor(Info.Attributes["color5"].Value);
-        Level.color[5] = ConvertToColor(Info.Attributes["color6"].Value);
-        Level.color[6] = ConvertToColor(Info.Attributes["color7"].Value);
-        Level.color[7] = ConvertToColor(Info.Attributes["color8"].Value);
-        Level.color[8] = ConvertToColor(Info.Attributes["color9"].Value);
+        Level.color[0] = decToColor(Info.Attributes["color1"].Value);
+        Level.color[1] = decToColor(Info.Attributes["color2"].Value);
+        Level.color[2] = decToColor(Info.Attributes["color3"].Value);
+        Level.color[3] = decToColor(Info.Attributes["color4"].Value);
+        Level.color[4] = decToColor(Info.Attributes["color5"].Value);
+        Level.color[5] = decToColor(Info.Attributes["color6"].Value);
+        Level.color[6] = decToColor(Info.Attributes["color7"].Value);
+        Level.color[7] = decToColor(Info.Attributes["color8"].Value);
+        Level.color[8] = decToColor(Info.Attributes["color9"].Value);
     }
 
-    public static Color ConvertToColor(string dec) {
+    public static Color decToColor(string dec) {
         string hex = int.Parse(dec).ToString("X2");
         float red = System.Convert.ToInt32(hex.Substring(0, 2), 16) / 255f;
         float green = System.Convert.ToInt32(hex.Substring(2, 2), 16) / 255f;
