@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,12 +20,14 @@ public class Level : MonoBehaviour
     public static Color[] color = new Color[9];
     public static AudioSource song;
 
-    // Vars for logic
+    // Logic
     public static int lastBullet;
-    public static int lastWarp;
-    public static int lastRate;
+    public static int lastTimeWarp;
+    public static int lastSpinRate;
+    
     public static float timeWarp;
     public static float spinRate;
+    
     public static GameObject player;
 
     // Thing that XML gets parsed into
@@ -55,17 +57,16 @@ public class Level : MonoBehaviour
     }
 
     // Keep seperate arrays of Bullets and Warps for some reason
-    public static marker[] bulletStructs;
-    public static marker[] warpStructs;
-    public static marker[] rateStructs;
+    public static marker[] bullets;
+    public static marker[] timeWarps;
+    public static marker[] spinRates;
 
     void Awake()
     {
         // Reset values
         lastBullet = 0;
-        lastWarp = 0;
-        lastRate = 0;
-
+        lastTimeWarp = 0;
+        lastSPinRate = 0;
         timeWarp = 1f;
         spinRate = 0f;
         player = GameObject.Find("Player");
@@ -80,77 +81,76 @@ public class Level : MonoBehaviour
 
     public static void sortWarps()
     {
-        // Sort the warps by time because time and spins are intermixed
-        Array.Sort<marker>(warpStructs, (x, y) => x.time.CompareTo(y.time));
-        Array.Sort<marker>(rateStructs, (x, y) => x.time.CompareTo(y.time));
+        // Sort each warp by time because they are checked in order
+        Array.Sort<marker>(timeWarps, (x, y) => x.time.CompareTo(y.time));
+        Array.Sort<marker>(spinRates, (x, y) => x.time.CompareTo(y.time));
     }
 
     // Runs every game update, fires patterns, and starts from the last fired marker in it's type
     public static void checkMarkers()
     {
-        for (int i = lastBullet; i < bulletStructs.Length; i++)
+        // For each bullet in array starting from last fired bullet
+        for (int i = lastBullet; i < bullets.Length; i++)
         {
-            if (bulletStructs[i].fired || (bulletStructs[i].time > song.time + Time.deltaTime))
+            // If bullet has been fired or it's too early, stop the loop
+            if (bullets[i].fired || (bullets[i].time > song.time + Time.deltaTime))
             {
                 lastBullet = i;
-                i = bulletStructs.Length;
+                i = bullets.Length;
             }
-            else if (!bulletStructs[i].fired && (bulletStructs[i].time < song.time + Time.deltaTime))
+            // If it hasn't been fired and it's late, fire it
+            else if (!bullets[i].fired && (bullets[i].time < song.time + Time.deltaTime))
             {
-                switch (bulletStructs[i].shotType)
+                // Shot type is represented by a number, call method for the correct pattern type
+                switch (bullets[i].shotType)
                 {
                     case 0:
-                        Script.Pattern.normal(bulletStructs[i].playerAimed, bulletStructs[i].bulletType, bulletStructs[i].offset0, bulletStructs[i].amount0, bulletStructs[i].speed0, bulletStructs[i].angle0, bulletStructs[i].enemies);
+                        Script.Pattern.normal(bullets[i].playerAimed, bullets[i].bulletType, bullets[i].offset0, bullets[i].amount0, bullets[i].speed0, bullets[i].angle0, bullets[i].enemies);
                         break;
                     case 1:
-                        Script.Pattern.wave(bulletStructs[i].rows, bulletStructs[i].playerAimed, bulletStructs[i].bulletType, bulletStructs[i].offset0, bulletStructs[i].offset1, bulletStructs[i].amount0, bulletStructs[i].amount1, bulletStructs[i].speed0, bulletStructs[i].speed1, bulletStructs[i].angle0, bulletStructs[i].angle1, bulletStructs[i].enemies);
+                        Script.Pattern.wave(bullets[i].rows, bullets[i].playerAimed, bullets[i].bulletType, bullets[i].offset0, bullets[i].offset1, bullets[i].amount0, bullets[i].amount1, bullets[i].speed0, bullets[i].speed1, bullets[i].angle0, bullets[i].angle1, bullets[i].enemies);
                         break;
                     case 2:
-                        Script.Pattern.normal(bulletStructs[i].playerAimed, bulletStructs[i].bulletType, bulletStructs[i].offset0, bulletStructs[i].amount0, bulletStructs[i].speed0, bulletStructs[i].angle0, bulletStructs[i].enemies);
+                        Script.Pattern.normal(bullets[i].playerAimed, bullets[i].bulletType, bullets[i].offset0, bullets[i].amount0, bullets[i].speed0, bullets[i].angle0, bullets[i].enemies);
                         break;
                     case 3:
-                        Script.Pattern.burst(bulletStructs[i].playerAimed, bulletStructs[i].bulletType, bulletStructs[i].offset0, bulletStructs[i].amount0, bulletStructs[i].speed0, bulletStructs[i].speed1, bulletStructs[i].angle0, bulletStructs[i].enemies);
+                        Script.Pattern.burst(bullets[i].playerAimed, bullets[i].bulletType, bullets[i].offset0, bullets[i].amount0, bullets[i].speed0, bullets[i].speed1, bullets[i].angle0, bullets[i].enemies);
                         break;
                 }
-                bulletStructs[i].fired = true;
+                bullets[i].fired = true;
             }
         }
 
         // Start from last fired warp, search all remaining warps
-        for (int i = lastWarp; i < warpStructs.Length; i++)
+        for (int i = lastTimeWarp; i < timeWarps.Length; i++)
         {
             // Check for a TimeWarp that is fired or too early
-            if (warpStructs[i].fired || (warpStructs[i].time > song.time + Time.deltaTime))
+            if (timeWarps[i].fired || (timeWarps[i].time > song.time + Time.deltaTime))
             {
                 // Set the last TimeWarp to this one
                 lastWarp = i;
-
                 // End the loop here
                 i = warpStructs.Length;
-            } else if (!warpStructs[i].fired && (warpStructs[i].time < song.time + Time.deltaTime))
+            } else if (!timeWarps[i].fired && (timeWarps[i].time < song.time + Time.deltaTime))
             {
-                timeWarp = warpStructs[i].val;
+                timeWarp = timeWarps[i].val;
                 // Set TimeWarp to fired so it doesn't repeat
-                warpStructs[i].fired = true;
+                timeWarps[i].fired = true;
             }
         }
-
-        for (int i = lastRate; i < rateStructs.Length; i++)
+        
+        // Same as above but for spinrates
+        for (int i = lastSpinRate; i < spinRates.Length; i++)
         {
-            // Check for a SpinRate that is fired or too early
-            if (rateStructs[i].fired || (rateStructs[i].time > song.time + Time.deltaTime))
+            if (spinRates[i].fired || (spinRates[i].time > song.time + Time.deltaTime))
             {
-                // Set the last SpinRate to this one
                 lastRate = i;
-
-                // End the loop here
-                i = rateStructs.Length;
+                i = spinRates.Length;
             }
-            else if (!rateStructs[i].fired && (rateStructs[i].time < song.time + Time.deltaTime))
+            else if (!spinRates[i].fired && (spinRates[i].time < song.time + Time.deltaTime))
             {
-                spinRate = rateStructs[i].val;
-                // Set SpinRate to fired so it doesn't repeat
-                rateStructs[i].fired = true;
+                spinRate = spinRates[i].val;
+                spinRates[i].fired = true;
             }
         }
     }
