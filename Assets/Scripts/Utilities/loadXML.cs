@@ -33,22 +33,22 @@ public class LoadXML : MonoBehaviour {
         // This selects all bullets because all bullets and only bullets have the 'shotType' attribute
         XmlNodeList bulletNodes = xDoc.SelectNodes("//Song//Script[@shotType]");
 
-        Level.timeWarps = new Level.marker[WarpNodes.Count];
-        Level.spinRates = new Level.marker[RateNodes.Count];
-        Level.bullets = new Level.marker[BulletNodes.Count];
+        Level.timeWarps = new Level.marker[timeWarpNodes.Count];
+        Level.spinRates = new Level.marker[spinRateNodes.Count];
+        Level.bullets = new Level.marker[bulletNodes.Count];
 
         int k = 0;
         int i = 0;
         int j = 0;
 
-        foreach (XmlNode timeMarker in WarpNodes) {
+        foreach (XmlNode timeWarpMarker in timeWarpNodes) {
             Level.timeWarps[k].warpType = 1;
             Level.timeWarps[k].val = float.Parse(timeWarpMarker.Attributes["val"].Value);
             Level.timeWarps[k].time = float.Parse(timeWarpMarker.Attributes["time"].Value);
             k++;
         }
 
-        foreach (XmlNode spinRateMarker in RateNodes)
+        foreach (XmlNode spinRateMarker in spinRateNodes)
         {
             Level.spinRates[j].warpType = 0;
             Level.spinRates[j].val = float.Parse(spinRateMarker.Attributes["val"].Value);
@@ -57,7 +57,7 @@ public class LoadXML : MonoBehaviour {
         }
 
         // Go through each bullet selected
-        foreach (XmlNode bulletMarker in BulletNodes) {
+        foreach (XmlNode bulletMarker in bulletNodes) {
             switch (bulletMarker.Attributes["shotType"].Value) {
                 case "normal":
                     Level.bullets[i].shotType = 0;

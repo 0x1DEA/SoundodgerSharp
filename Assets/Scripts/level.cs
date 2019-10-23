@@ -21,12 +21,12 @@ public class Level : MonoBehaviour
     public static AudioSource song;
 
     // Logic
-    public static int lastBullet;
-    public static int lastTimeWarp;
-    public static int lastSpinRate;
+    public static int lastBullet = 0;
+    public static int lastTimeWarp = 0;
+    public static int lastSpinRate = 0;
     
-    public static float timeWarp;
-    public static float spinRate;
+    public static float timeWarp = 1f;
+    public static float spinRate = 0;
     
     public static GameObject player;
 
@@ -63,12 +63,6 @@ public class Level : MonoBehaviour
 
     void Awake()
     {
-        // Reset values
-        lastBullet = 0;
-        lastTimeWarp = 0;
-        lastSPinRate = 0;
-        timeWarp = 1f;
-        spinRate = 0f;
         player = GameObject.Find("Player");
     }
 
@@ -128,9 +122,9 @@ public class Level : MonoBehaviour
             if (timeWarps[i].fired || (timeWarps[i].time > song.time + Time.deltaTime))
             {
                 // Set the last TimeWarp to this one
-                lastWarp = i;
+                lastTimeWarp = i;
                 // End the loop here
-                i = warpStructs.Length;
+                i = timeWarps.Length;
             } else if (!timeWarps[i].fired && (timeWarps[i].time < song.time + Time.deltaTime))
             {
                 timeWarp = timeWarps[i].val;
@@ -144,7 +138,7 @@ public class Level : MonoBehaviour
         {
             if (spinRates[i].fired || (spinRates[i].time > song.time + Time.deltaTime))
             {
-                lastRate = i;
+                lastSpinRate = i;
                 i = spinRates.Length;
             }
             else if (!spinRates[i].fired && (spinRates[i].time < song.time + Time.deltaTime))
