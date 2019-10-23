@@ -4,20 +4,13 @@ using UnityEngine;
 
 public class Main : MonoBehaviour
 {
-    public float radius;
     public GameObject enemy;
     public GameObject ring;
-    public Quaternion rot;
     private int iframe;
-
-    public float arenaRadius;
-    public float enemyRadius;
-    public Vector3 center;
 
     void Start()
     {
-        center = gameObject.transform.position;
-        SpawnEnemies();
+        spawnEnemies();
     }
 
     void Update()
@@ -25,28 +18,26 @@ public class Main : MonoBehaviour
         iframe++;
         if (iframe > 30)
         {
-            MakeRing();
+            makeRing();
             iframe = 0;
         }
 
         Level.checkMarkers();
     }
 
-    void SpawnEnemies()
+    void spawnEnemies()
     {
         for (int i = 0; i < Level.enemies; i++)
         {
-            float ang = i * Mathf.PI * 2f / Level.enemies;
-            Vector3 newPos = new Vector3(Mathf.Cos(ang) * radius, Mathf.Sin(ang) * radius, 0);
-            GameObject enemyInstance = Instantiate(enemy, newPos, Quaternion.identity);
+            GameObject enemyInstance = Instantiate(enemy, gameObject.transform.position, Quaternion.identity);
             enemyInstance.gameObject.name = (i + 1).ToString();
             Enemy enemyObject = enemyInstance.GetComponent<Enemy>();
             enemyObject.i = i + 1;
         }
     }
 
-    void MakeRing()
+    void makeRing()
     {
-        Instantiate(ring, new Vector3(0, 0, 0), rot);
+        Instantiate(ring, new Vector3(0, 0, 0), gameObject.transform.rotation);
     }
 }

@@ -24,10 +24,9 @@ public class Level : MonoBehaviour
     public static int lastBullet = 0;
     public static int lastTimeWarp = 0;
     public static int lastSpinRate = 0;
-    
     public static float timeWarp = 1f;
     public static float spinRate = 0;
-    
+
     public static GameObject player;
 
     // Thing that XML gets parsed into
@@ -56,7 +55,6 @@ public class Level : MonoBehaviour
         public bool fired;
     }
 
-    // Keep seperate arrays of Bullets and Warps for some reason
     public static marker[] bullets;
     public static marker[] timeWarps;
     public static marker[] spinRates;
@@ -68,34 +66,27 @@ public class Level : MonoBehaviour
 
     void Start()
     {
-        // Start the song bababooey
-        song = GetComponent<AudioSource>();
         song.Play();
+        song = GetComponent<AudioSource>();
     }
 
     public static void sortWarps()
     {
-        // Sort each warp by time because they are checked in order
         Array.Sort<marker>(timeWarps, (x, y) => x.time.CompareTo(y.time));
         Array.Sort<marker>(spinRates, (x, y) => x.time.CompareTo(y.time));
     }
 
-    // Runs every game update, fires patterns, and starts from the last fired marker in it's type
     public static void checkMarkers()
     {
-        // For each bullet in array starting from last fired bullet
         for (int i = lastBullet; i < bullets.Length; i++)
         {
-            // If bullet has been fired or it's too early, stop the loop
             if (bullets[i].fired || (bullets[i].time > song.time + Time.deltaTime))
             {
                 lastBullet = i;
                 i = bullets.Length;
             }
-            // If it hasn't been fired and it's late, fire it
             else if (!bullets[i].fired && (bullets[i].time < song.time + Time.deltaTime))
             {
-                // Shot type is represented by a number, call method for the correct pattern type
                 switch (bullets[i].shotType)
                 {
                     case 0:
@@ -115,20 +106,17 @@ public class Level : MonoBehaviour
             }
         }
 
-        // Start from last fired warp, search all remaining warps
+        // Same as above but shorter and for timewarps
         for (int i = lastTimeWarp; i < timeWarps.Length; i++)
         {
             // Check for a TimeWarp that is fired or too early
             if (timeWarps[i].fired || (timeWarps[i].time > song.time + Time.deltaTime))
             {
-                // Set the last TimeWarp to this one
                 lastTimeWarp = i;
-                // End the loop here
                 i = timeWarps.Length;
             } else if (!timeWarps[i].fired && (timeWarps[i].time < song.time + Time.deltaTime))
             {
                 timeWarp = timeWarps[i].val;
-                // Set TimeWarp to fired so it doesn't repeat
                 timeWarps[i].fired = true;
             }
         }

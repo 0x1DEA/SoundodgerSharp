@@ -35,14 +35,21 @@ public class Bullet : MonoBehaviour
 
     void Update()
     {
+        transform.position += transform.TransformDirection(new Vector2(0, speed * Level.timeWarp));
+    }
+
+    void FixedUpdate()
+    {
         life += 0.1f;
 
-        transform.position += transform.TransformDirection(new Vector2(0, speed * Level.timeWarp));
-        
-        if (Mathf.Sqrt(Mathf.Pow(transform.position.y, 2) + Mathf.Pow(transform.position.x, 2)) < arenaRadius - bulletRadius)
+        if (!insideArena)
         {
-            insideArena = true;
+            if (Mathf.Sqrt(Mathf.Pow(transform.position.y, 2) + Mathf.Pow(transform.position.x, 2)) < arenaRadius - bulletRadius)
+            {
+                insideArena = true;
+            }
         }
+
         if (((Mathf.Sqrt(Mathf.Pow(transform.position.y, 2) + Mathf.Pow(transform.position.x, 2)) > arenaRadius - bulletRadius) && insideArena == true) || !insideArena && life > 10f)
         {
             Destroy(gameObject);
